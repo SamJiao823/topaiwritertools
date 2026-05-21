@@ -115,6 +115,15 @@
         .related-articles ul { margin: 12px 0 0 20px; }
         .related-articles li { margin-bottom: 8px; }
         @media (max-width: 640px) { h1 { font-size: 28px; } h2 { font-size: 22px; } .container { padding: 0 16px; } }
+        #reading-progress { position: fixed; top: 0; left: 0; width: 0%; height: 3px; background: linear-gradient(90deg, #7c3aed, #a78bfa); z-index: 9999; transition: width 0.1s ease-out; }
+        .toc { background: #141416; border: 1px solid #1f1f23; border-radius: 12px; padding: 24px; margin: 32px 0; }
+        .toc h3 { margin-top: 0; margin-bottom: 12px; font-size: 16px; color: #a1a1aa; text-transform: uppercase; letter-spacing: 0.05em; }
+        .toc ul { list-style: none; margin: 0; padding: 0; }
+        .toc li { margin-bottom: 8px; font-size: 15px; }
+        .toc a { color: #d4d4d8; }
+        .toc a:hover { color: #a78bfa; }
+        .trust-line { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 24px; font-size: 13px; color: #71717a; }
+        .trust-line a { color: #a78bfa; }
     </style>
 </head>
 <body>
@@ -138,14 +147,28 @@
 
         <p>This review covers everything: features, pricing, output quality, pros and cons, and how it stacks up against Jasper, Copy.ai, and Writesonic.</p>
 
-        <h2>What Is Rytr?</h2>
+        <div class="toc">
+            <h3>📑 Table of Contents</h3>
+            <ul>
+                <li><a href="#what-is-rytr">What Is Rytr?</a></li>
+                <li><a href="#key-features">Rytr Key Features</a></li>
+                <li><a href="#pricing">Rytr Pricing</a></li>
+                <li><a href="#pros-cons">Pros &amp; Cons</a></li>
+                <li><a href="#comparison">Rytr vs Writesonic</a></li>
+                <li><a href="#alternatives">Best Alternatives</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#verdict">Final Verdict</a></li>
+            </ul>
+        </div>
+
+        <h2 id="what-is-rytr">What Is Rytr?</h2>
         <p>Rytr is an AI-powered writing assistant launched in 2021 that helps users generate content across 40+ use cases and 30+ languages. It's built on top of GPT-3 and Claude models and positions itself as the <strong>budget-friendly alternative</strong> to premium tools like Jasper and Copy.ai.</p>
 
         <p>With over <strong>1 million users</strong> worldwide (source: Rytr official site), Rytr has gained a strong following among freelancers, students, and small business owners who need quality content without enterprise pricing.</p>
 
         <p>The tool is available as a web app and also offers browser extensions for Chrome and Edge, making it easy to use across different platforms.</p>
 
-        <h2>Rytr Key Features</h2>
+        <h2 id="key-features">Rytr Key Features</h2>
 
         <h3>1. 40+ Use Cases</h3>
         <p>Rytr covers an impressive range of content types: blog sections, emails, social media posts, SEO meta descriptions, product descriptions, landing page copy, video scripts, interview questions, and more. For most everyday writing needs, there's a template ready to go.</p>
@@ -170,7 +193,7 @@
             <p>"Rytr is my go-to for drafting blog posts and social media content. The unlimited plan at $7.50/month is unbeatable for freelancers. It's not perfect for long-form content, but for the price, it's incredible value." — Sarah K., Freelance Content Writer (G2 Review)</p>
         </div>
 
-        <h2>Rytr Pricing</h2>
+        <h2 id="pricing">Rytr Pricing</h2>
 
         <table>
             <thead>
@@ -222,7 +245,7 @@
             <a href="https://rytr.me?via=zhao-tianjun" class="cta-btn" target="_blank" rel="nofollow sponsored">Try Rytr Free →</a>
         </div>
 
-        <h2>Rytr Pros and Cons</h2>
+        <h2 id="pros-cons">Rytr Pros and Cons</h2>
 
         <h3>✅ Pros</h3>
         <ul>
@@ -245,7 +268,7 @@
             <li><span class="cons">✗</span> <strong>Occasional repetitive phrasing:</strong> Can produce template-like sentences that need rewriting</li>
         </ul>
 
-        <h2>Rytr vs Writesonic: Key Comparison</h2>
+        <h2 id="comparison">Rytr vs Writesonic: Key Comparison</h2>
 
         <table>
             <thead>
@@ -301,7 +324,7 @@
 
         <p><strong>The verdict:</strong> If budget is your #1 concern, Rytr wins. If you need better quality and SEO tools, Writesonic's $20/mo plan is worth the upgrade.</p>
 
-        <h2>Best Rytr Alternatives</h2>
+        <h2 id="alternatives">Best Rytr Alternatives</h2>
 
         <p>Rytr isn't the only option. Here are the top alternatives depending on your needs:</p>
 
@@ -313,7 +336,7 @@
 
         <p>For a full breakdown, check out our <a href="/">detailed comparison of all 4 tools</a>.</p>
 
-        <h2>Frequently Asked Questions</h2>
+        <h2 id="faq">Frequently Asked Questions</h2>
 
         <h3>Is Rytr worth it in 2026?</h3>
         <p>Yes, Rytr is worth it for budget-conscious users, freelancers, and students. At $7.50/month for unlimited words, it offers the best value in the AI writing market. However, for enterprise-level content quality, Jasper or Writesonic may be better options.</p>
@@ -331,7 +354,7 @@
         <p>Yes, Rytr includes a built-in plagiarism checker on paid plans. The Saver plan includes up to 5 plagiarism checks per month, while the Unlimited plan offers unlimited checks.</p>
 
         <div class="verdict">
-            <h3>Final Verdict</h3>
+            <h3 id="verdict">Final Verdict</h3>
             <div class="score">8.2 / 10</div>
             <p><strong>Rytr is the best budget AI writing tool in 2026.</strong> If you're a freelancer, student, or small business owner who needs decent content at the lowest possible price, Rytr is your tool. The $7.50/month unlimited plan is genuinely unbeatable value.</p>
             <p><strong>Who should use Rytr:</strong></p>
@@ -366,8 +389,17 @@
             </ul>
         </div>
 
+    <script>
+        window.addEventListener('scroll', function() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById('reading-progress').style.width = scrolled + '%';
+        });
+    </script>
+        <div id="reading-progress"></div>
         <footer>
-            <p>TopAIWritingTools.com &copy; 2026 · <a href="/">Home</a> · <a href="/privacy.html">Privacy</a> · <a href="/affiliate-disclosure.html">Affiliate Disclosure</a></p>
+            <p>TopAIWritingTools.com &copy; 2026 · <a href="/">Home</a> · <a href="/how-we-test">How We Test</a> · <a href="/about">About</a> · <a href="/privacy.html">Privacy</a> · <a href="/affiliate-disclosure.html">Affiliate Disclosure</a></p>
             <p>We may earn a commission when you purchase through links on our site.</p>
         </footer>
     </div>
