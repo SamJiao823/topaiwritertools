@@ -1,0 +1,25 @@
+# robots.txt for topaiwritertools.com
+# Allow AI search engine crawlers for GEO optimization
+
+# OpenAI (ChatGPT Search)
+User-agent: GPTBot
+Allow: /
+
+# Anthropic (Claude)
+User-agent: ClaudeBot
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+# Google AI (Gemini)
+User-agent: Google-Extended
+Allow: /
+
+# Allow all other bots to crawl everything
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://topaiwritertools.com/sitemap.xml
