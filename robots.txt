@@ -1,5 +1,10 @@
 # robots.txt for topaiwritertools.com
-# Allow AI search engine crawlers for GEO optimization
+# GEO Optimization — Allow AI crawlers for AI search visibility
+
+# Cloudflare Content-Signals
+User-agent: *
+Content-Signal: search=yes,ai-input=yes,ai-train=no
+Allow: /
 
 # OpenAI (ChatGPT Search)
 User-agent: GPTBot
@@ -17,9 +22,19 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-# Allow all other bots to crawl everything
-User-agent: *
+# Common AI crawlers
+User-agent: CCBot
 Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Block spam crawlers
+User-agent: Bytespider
+Disallow: /
+
+User-agent: Amazonbot
+Disallow: /
 
 # Sitemap
 Sitemap: https://topaiwritertools.com/sitemap.xml
