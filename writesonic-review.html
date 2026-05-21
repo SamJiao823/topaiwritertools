@@ -117,6 +117,9 @@
         .related-articles ul { margin: 12px 0 0 20px; }
         .related-articles li { margin-bottom: 8px; }
         @media (max-width: 640px) { h1 { font-size: 28px; } h2 { font-size: 22px; } .container { padding: 0 16px; } }
+        #reading-progress { position: fixed; top: 0; left: 0; width: 0%; height: 3px; background: linear-gradient(90deg, #7c3aed, #a78bfa); z-index: 9999; transition: width 0.1s ease-out; }
+        .trust-line { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 24px; font-size: 13px; color: #71717a; }
+        .trust-line a { color: #a78bfa; }
     </style>
 </head>
 <body>
@@ -126,9 +129,11 @@
         </div>
 
         <h1>Writesonic Review 2026: Features, Pricing & Honest Verdict</h1>
-        <div class="meta">
+        <div class="trust-line">
+            <span>🔬 <a href="/how-we-test">How We Test</a></span>
             <span>📅 Updated: May 21, 2026</span>
             <span>⏱ 11 min read</span>
+            <span>📖 <a href="/about">About Us</a></span>
         </div>
         <div class="affiliate-notice">
             <strong>Disclosure:</strong> We may earn a commission if you purchase through links on this page. All opinions are our own based on hands-on testing.
@@ -342,8 +347,17 @@
             </ul>
         </div>
 
+    <script>
+        window.addEventListener("scroll", function() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("reading-progress").style.width = scrolled + "%";
+        });
+    </script>
+        <div id="reading-progress"></div>
         <footer>
-            <p>TopAIWritingTools.com &copy; 2026 · <a href="/">Home</a> · <a href="/privacy.html">Privacy</a> · <a href="/affiliate-disclosure.html">Affiliate Disclosure</a></p>
+            <p>TopAIWritingTools.com &copy; 2026 · <a href="/">Home</a> · <a href="/how-we-test">How We Test</a> · <a href="/about">About</a> · <a href="/privacy.html">Privacy</a> · <a href="/affiliate-disclosure.html">Affiliate Disclosure</a></p>
             <p>We may earn a commission when you purchase through links on our site.</p>
         </footer>
     </div>
