@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proxy Setup Guide 2026 - 搬瓦工 + Shadowsocks + Clash Verge 配置指南</title>
+    <meta name="description" content="搬瓦工BandwagonHost洛杉矶节点 + sing-box Shadowsocks aes-256-gcm + Clash Verge v2.5.0 完整代理配置指南。建站地基，优先搞定VPN。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, sans-serif; background: #0a0a0b; color: #e4e4e7; line-height: 1.6; }
+        .container { max-width: 840px; margin: 0 auto; padding: 0 24px; }
+
+        /* Hero */
+        .hero { padding: 80px 0 40px; text-align: center; }
+        .hero h1 { font-size: 42px; font-weight: 800; letter-spacing: -0.03em; background: linear-gradient(135deg, #fff 0%, #a78bfa 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 12px; }
+        .hero p { font-size: 17px; color: #a1a1aa; max-width: 600px; margin: 0 auto; }
+        .hero-badge { display: inline-block; background: rgba(52,211,153,0.15); border: 1px solid rgba(52,211,153,0.3); padding: 6px 16px; border-radius: 100px; font-size: 13px; color: #34d399; margin-bottom: 20px; }
+
+        /* Content */
+        .content { padding: 40px 0 80px; }
+
+        .content h2 { font-size: 26px; font-weight: 700; margin: 48px 0 16px; color: #fff; letter-spacing: -0.02em; }
+        .content h2:first-of-type { margin-top: 0; }
+        .content h3 { font-size: 19px; font-weight: 600; margin: 32px 0 12px; color: #e4e4e7; }
+        .content p { color: #a1a1aa; font-size: 15px; margin-bottom: 16px; }
+        .content ul, .content ol { color: #a1a1aa; font-size: 15px; margin: 0 0 20px 24px; }
+        .content li { margin-bottom: 8px; }
+        .content strong { color: #e4e4e7; }
+
+        /* Callout */
+        .callout { background: #141416; border-left: 4px solid #7c3aed; padding: 20px 24px; border-radius: 0 12px 12px 0; margin: 24px 0; }
+        .callout p { margin: 0; font-size: 14px; }
+        .callout-warn { border-left-color: #f59e0b; }
+        .callout-warn p { color: #fbbf24; }
+        .callout-ok { border-left-color: #34d399; }
+        .callout-ok p { color: #34d399; }
+
+        /* Table */
+        .table-wrap { background: #141416; border-radius: 12px; border: 1px solid #1f1f23; overflow-x: auto; margin: 24px 0; }
+        table { width: 100%; border-collapse: collapse; min-width: 500px; }
+        th, td { padding: 14px 18px; text-align: left; border-bottom: 1px solid #1f1f23; font-size: 14px; }
+        th { background: #1a1a1e; font-weight: 600; color: #a1a1aa; text-transform: uppercase; letter-spacing: 0.05em; font-size: 12px; }
+        td { color: #d4d4d8; }
+        tr:hover { background: rgba(139,92,246,0.04); }
+        .check { color: #34d399; font-weight: bold; }
+
+        /* Code */
+        .code-block { background: #1a1a1e; border: 1px solid #1f1f23; border-radius: 10px; padding: 20px 24px; margin: 16px 0 24px; overflow-x: auto; }
+        .code-block code { font-family: 'SF Mono', 'Fira Code', monospace; font-size: 13px; color: #d4d4d8; line-height: 1.8; white-space: pre; }
+
+        .inline-code { background: #1f1f23; padding: 2px 8px; border-radius: 4px; font-size: 13px; font-family: 'SF Mono', monospace; color: #a78bfa; }
+
+        /* Tags */
+        .tag { display: inline-block; background: rgba(139,92,246,0.15); border: 1px solid rgba(139,92,246,0.2); padding: 2px 10px; border-radius: 100px; font-size: 12px; color: #a78bfa; margin-right: 4px; }
+        .tag-green { background: rgba(52,211,153,0.15); border-color: rgba(52,211,153,0.2); color: #34d399; }
+
+        /* Back link */
+        .back-link { display: inline-block; margin-bottom: 40px; color: #a78bfa; text-decoration: none; font-size: 14px; font-weight: 500; }
+        .back-link:hover { color: #c4b5fd; }
+
+        /* Footer */
+        footer { text-align: center; padding: 40px 0 60px; border-top: 1px solid #1f1f23; color: #52525b; font-size: 13px; }
+        footer a { color: #a78bfa; text-decoration: none; }
+        footer a:hover { color: #c4b5fd; }
+
+        @media (max-width: 640px) {
+            .hero h1 { font-size: 28px; }
+            .content h2 { font-size: 22px; }
+            .container { padding: 0 16px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero-badge">建站地基 · 2026-05-21</div>
+            <h1>🌐 Proxy Setup Guide</h1>
+            <p>搬瓦工 + Shadowsocks + Clash Verge 完整配置指南</p>
+        </section>
+
+        <a class="back-link" href="/">← Back to Top AI Writing Tools</a>
+
+        <div class="content">
+
+            <!-- 引言 -->
+            <div class="callout callout-warn">
+                <p>⚠️ <strong>VPN 是建站地基</strong> — 必须先搞定代理才能做后续工作。没有稳定的海外网络，建站、部署、SEO 全部寸步难行。</p>
+            </div>
+
+            <!-- 硬件与软件栈 -->
+            <h2>📦 硬件与软件栈</h2>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr><th>组件</th><th>方案</th><th>费用</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><strong>VPS 服务商</strong></td><td>搬瓦工 BandwagonHost <span class="tag">洛杉矶节点</span></td><td>$49.99/年</td></tr>
+                        <tr><td><strong>服务端</strong></td><td>sing-box <span class="tag">Shadowsocks</span></td><td>免费</td></tr>
+                        <tr><td><strong>客户端</strong></td><td>Clash Verge <span class="tag">v2.5.0</span></td><td>免费</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- 配置确认 -->
+            <h2>✅ 配置确认</h2>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr><th>配置项</th><th>值</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>节点名称</td><td><strong>搬瓦工-洛杉矶</strong> <span class="tag tag-green">已激活</span></td></tr>
+                        <tr><td>代理协议</td><td><strong>Shadowsocks</strong></td></tr>
+                        <tr><td>UDP 支持</td><td class="check">✅ <strong>已启用</strong></td></tr>
+                        <tr><td>节点状态</td><td class="check">✅ <strong>已选中（激活中）</strong></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Clash Verge 客户端配置 -->
+            <h2>🔧 Clash Verge 客户端配置要点</h2>
+
+            <h3>1️⃣ 端口设置 <span style="color:#ef4444;font-size:14px;font-weight:400;">（关键！踩坑提醒）</span></h3>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr><th>端口</th><th>说明</th><th>状态</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><strong>7897</strong></td><td>Clash Verge 实际代理端口</td><td class="check">✅ <strong>正确端口</strong></td></tr>
+                        <tr><td style="text-decoration:line-through;color:#ef4444;">7890</td><td>常见默认端口</td><td style="color:#ef4444;">❌ Clash Verge 不适用</td></tr>
+                        <tr><td style="text-decoration:line-through;color:#ef4444;">7891</td><td>常见默认端口</td><td style="color:#ef4444;">❌ Clash Verge 不适用</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="callout callout-warn">
+                <p>⚠️ <strong>不要用 7890 或 7891！</strong> 经过实测，Clash Verge 的实际代理端口是 <strong>7897</strong>，这是最常踩的坑。</p>
+            </div>
+
+            <h3>2️⃣ 系统网络设置</h3>
+            <div class="callout callout-ok">
+                <p>✅ <strong>不动系统网络设置</strong> — 只需在 Clash Verge 客户端内完成配置，不需要修改 macOS / Windows 系统级的网络代理设置。</p>
+            </div>
+
+            <h3>3️⃣ 服务端配置（搬瓦工 + sing-box）</h3>
+            <div class="code-block"><code>协议: Shadowsocks
+加密方式: aes-256-gcm
+节点: 搬瓦工 洛杉矶机房</code></div>
+
+            <!-- 快速启动 -->
+            <h2>🚀 快速启动步骤</h2>
+            <ol>
+                <li>搬瓦工后台开启 Shadowsocks 服务</li>
+                <li>复制节点配置信息（地址、端口、密码、加密方式）</li>
+                <li>Clash Verge 客户端 → 导入配置</li>
+                <li>切换到「<strong>搬瓦工-洛杉矶</strong>」节点</li>
+                <li>确认端口 <span class="inline-code">7897</span> 已开启</li>
+                <li>浏览器打开 <span class="inline-code">ip.sb</span> 验证 IP 已变更</li>
+            </ol>
+
+            <!-- 验证代理 -->
+            <h2>📋 验证代理是否生效</h2>
+            <div class="code-block"><code># 查看当前公网 IP
+curl ip.sb
+
+# 验证端口连通性
+curl -x http://127.0.0.1:7897 https://www.google.com -I</code></div>
+
+            <!-- 常见问题 -->
+            <h2>⚠️ 常见问题</h2>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr><th>问题</th><th>解决方案</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>连不上节点</td><td>检查搬瓦工后台 Shadowsocks 服务是否运行</td></tr>
+                        <tr><td>端口不可用</td><td>确认 Clash Verge 设置的端口是 <strong>7897</strong></td></tr>
+                        <tr><td>网速慢</td><td>搬瓦工洛杉矶节点一般延迟 150-200ms，可尝试更换机房</td></tr>
+                        <tr><td>UDP 不支持</td><td>确保服务端 sing-box 配置中启用了 UDP 转发</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p style="color:#52525b;font-size:13px;margin-top:48px;">最后更新：2026-05-21</p>
+
+        </div>
+
+        <footer>
+            <p>© 2026 <a href="/">TopAIWritingTools.com</a> — <a href="/privacy.html">Privacy</a> · <a href="/affiliate-disclosure.html">Affiliate Disclosure</a> · <a href="/how-we-test.html">How We Test</a> · <a href="/about.html">About</a></p>
+        </footer>
+    </div>
+</body>
+</html>
