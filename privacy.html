@@ -6,6 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy | Top AI Writing Tools | topaiwritertools.com</title>
     <meta name="description" content="Privacy Policy for Top AI Writing Tools">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Privacy Policy | Top AI Writing Tools | topaiwritertools.com" />
+    <meta property="og:description" content="Privacy Policy for Top AI Writing Tools" />
+    <meta property="og:url" content="https://topaiwritertools.com/privacy" />
+    <meta property="og:image" content="https://topaiwritertools.com/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Top AI Writing Tools" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Privacy Policy | Top AI Writing Tools | topaiwritertools.com" />
+    <meta name="twitter:description" content="Privacy Policy for Top AI Writing Tools" />
+    <meta name="twitter:image" content="https://topaiwritertools.com/og-image.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
@@ -117,7 +132,45 @@
 
         <footer>
             <p>TopAIWritingTools.com &copy; 2026 · <a href="/">Home</a> · <a href="/privacy.html">Privacy</a> · <a href="/affiliate-disclosure.html">Affiliate Disclosure</a></p>
-        </footer>
+        
+<div class="newsletter-signup" style="background:linear-gradient(135deg,rgba(124,58,237,0.06),rgba(124,58,237,0.02));border:1px solid rgba(124,58,237,0.15);border-radius:14px;padding:36px;margin:40px auto 0;max-width:560px;text-align:center;">
+  <h4 style="font-size:18px;margin-bottom:8px;">Get the Best AI Tool Deals in Your Inbox</h4>
+  <p style="font-size:14px;color:#a1a1aa;margin-bottom:20px;">One email per month — new tools, price drops, and honest comparisons. No spam, unsubscribe anytime.</p>
+  <form class="newsletter-form" style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;" onsubmit="handleNewsletterSubmit(event)">
+    <input type="email" placeholder="Your email address" required style="padding:12px 18px;border-radius:8px;border:1px solid #333;background:#0a0a0b;color:#e4e4e7;font-size:14px;min-width:260px;outline:none;" />
+    <button type="submit" style="padding:12px 28px;background:linear-gradient(135deg,#7c3aed,#6d28d9);color:#fff;border:none;border-radius:8px;font-weight:700;font-size:14px;cursor:pointer;transition:all 0.2s;">Subscribe</button>
+  </form>
+  <p class="newsletter-msg" style="display:none;margin-top:12px;font-size:14px;color:#4ade80;"></p>
+</div>
+<script>
+function handleNewsletterSubmit(e) {
+  e.preventDefault();
+  var email = e.target.querySelector('input[type="email"]').value;
+  var msg = e.target.parentElement.querySelector('.newsletter-msg');
+  fetch('https://connect.mailerlite.com/subscribe/YOUR_FORM_ID', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ email: email })
+  }).then(function(r) {
+    if (r.ok) {
+      msg.style.display = 'block';
+      msg.textContent = 'Subscribed! Check your inbox for confirmation.';
+      msg.style.color = '#4ade80';
+      e.target.reset();
+    } else {
+      msg.style.display = 'block';
+      msg.textContent = 'Something went wrong. Please try again.';
+      msg.style.color = '#ef4444';
+    }
+  }).catch(function() {
+    msg.style.display = 'block';
+    msg.textContent = 'Something went wrong. Please try again.';
+    msg.style.color = '#ef4444';
+  });
+  return false;
+}
+</script>
+    </footer>
     </div>
 </body>
 </html>
