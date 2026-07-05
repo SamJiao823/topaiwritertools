@@ -6,12 +6,37 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://topaiwritertools.com/writesonic-review</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://topaiwritertools.com/rytr-review</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://topaiwritertools.com/jasper-vs-writesonic-vs-rytr</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://topaiwritertools.com/how-to-write-blog-post-with-ai</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://topaiwritertools.com/best-ai-writing-tools-for-bloggers</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://topaiwritertools.com/best-ai-writing-tools-for-freelancers</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://topaiwritertools.com/best-ai-writing-tools-for-seo-content</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -36,6 +61,26 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://topaiwritertools.com/jasper-review</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://topaiwritertools.com/ai-writing-for-seo</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://topaiwritertools.com/claude-pro-review</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://topaiwritertools.com/how-to-choose-ai-writing-tool</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://topaiwritertools.com/chatgpt-vs-claude</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -46,29 +91,19 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://topaiwritertools.com/how-to-choose-ai-writing-tool</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://topaiwritertools.com/jasper-review</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://topaiwritertools.com/rytr-review</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://topaiwritertools.com/rytr-vs-chatgpt</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://topaiwritertools.com/writesonic-review</loc>
+    <loc>https://topaiwritertools.com/how-we-test</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://topaiwritertools.com/about</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://topaiwritertools.com/affiliate-disclosure</loc>
@@ -79,20 +114,5 @@
     <loc>https://topaiwritertools.com/privacy</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://topaiwritertools.com/best-ai-writing-tools-for-seo-content</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://topaiwritertools.com/about</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
-  </url>
-  <url>
-    <loc>https://topaiwritertools.com/how-we-test</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
   </url>
 </urlset>
