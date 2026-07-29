@@ -115,13 +115,18 @@
     <div class="container">
         <!-- Hero -->
         <section class="hero">
-            <div class="hero-badge">Updated July 2026 · Constantly refreshed</div>
-            <h1>Best AI Writing Tools 2026</h1>
+            <div class="hero-badge">Trusted by thousands of writers · Updated July 2026</div>
+            <h1>Choose the Right AI Writing Tool Faster</h1>
             <p>We test AI writing tools with real data — 30-day deep reviews, side-by-side comparisons, and step-by-step tutorials. Find the one that fits your workflow, budget, and needs.</p>
+            <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:10px;">
+                <a href="#table" class="btn-sm" style="text-decoration:none;">Compare Tools</a>
+                <a href="/how-we-test" class="btn-sm" style="text-decoration:none;">How We Test</a>
+            </div>
+            <p style="max-width:720px;margin:18px auto 0;color:#c4b5fd;font-size:15px;">A quick starting point for writers, marketers, and SEO teams who want a faster way to pick the right AI writing tool.</p>
         </section>
 
         <!-- Quick Comparison Table -->
-        <h2 class="section-title">Quick Comparison</h2>
+        <h2 id="table" class="section-title">Quick Comparison</h2>
         <p class="section-sub">See how they stack up at a glance</p>
         <div class="table-wrap">
             <table>
@@ -188,7 +193,7 @@
                         <td></td>
                         <td class="btn-cell"><a href="https://www.jasper.ai" class="btn-sm" target="_blank" rel="nofollow sponsored">Try Jasper →</a></td>
                         <td class="btn-cell"><a href="https://www.copy.ai" class="btn-sm" target="_blank" rel="nofollow sponsored">Try Copy.ai →</a></td>
-                        <td class="btn-cell"><a href="https://writesonic.com?via=topaiwritertools" class="btn-sm" target="_blank" rel="nofollow sponsored">Try Writesonic →</a></td>
+                        <td class="btn-cell"><a href="https://writesonic.com" class="btn-sm" target="_blank" rel="nofollow sponsored">Try Writesonic →</a></td>
                         <td class="btn-cell"><a href="https://rytr.me?via=zhao-tianjun" class="btn-sm" target="_blank" rel="nofollow sponsored">Try Rytr →</a></td>
                     </tr>
                 </tbody>
@@ -226,7 +231,7 @@
                 <div class="price-label">per month · Lite plan</div>
                 <p>Best for SEO content. Native Ahrefs integration, GEO tracking for AI search, and one-click long-form articles.</p>
                 <a href="/writesonic-review" class="btn">Read 30-Day Review →</a>
-                <a href="https://writesonic.com?ref=topaiwritertools" class="btn" style="margin-top:8px;background:linear-gradient(135deg,#6d28d9,#7c3aed);" target="_blank" rel="nofollow sponsored">Try Writesonic Free →</a>
+                <a href="https://writesonic.com" class="btn" style="margin-top:8px;background:linear-gradient(135deg,#6d28d9,#7c3aed);" target="_blank" rel="nofollow sponsored">Try Writesonic Free →</a>
             </div>
 
             <div class="tool-card">
@@ -348,18 +353,6 @@
             </div>
         
             <div class="tool-card">
-                <span class="badge badge-easy">✍️ Guide</span>
-                <h3>Best AI Writing Tools for Bloggers 2026</h3>
-                <p>Top 5 AI writing tools for bloggers compared — Rytr, Writesonic, Jasper, Copy.ai & ChatGPT. Which one saves the most time and money?</p>
-                <a href="/best-ai-writing-tools-for-bloggers" class="btn">Read Article →</a>
-            </div>
-            <div class="tool-card">
-                <span class="badge badge-value">💼 Guide</span>
-                <h3>Best AI Writing Tools for Freelancers 2026</h3>
-                <p>Freelancers need fast, affordable AI writing tools. We compared Rytr, Writesonic, Jasper & more — here's what actually saves time and earns more.</p>
-                <a href="/best-ai-writing-tools-for-freelancers" class="btn">Read Article →</a>
-            </div>
-            <div class="tool-card">
                 <span class="badge badge-alt">⚔️ VS</span>
                 <h3>ChatGPT vs Claude 2026</h3>
                 <p>ChatGPT vs Claude — which AI writing assistant wins in 2026? We tested both on speed, quality, pricing and writing style. The results may surprise you.</p>
@@ -411,34 +404,62 @@
   <h4 style="font-size:18px;margin-bottom:8px;">Get the Best AI Tool Deals in Your Inbox</h4>
   <p style="font-size:14px;color:#a1a1aa;margin-bottom:20px;">One email per month — new tools, price drops, and honest comparisons. No spam, unsubscribe anytime.</p>
   <form class="newsletter-form" style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;" onsubmit="handleNewsletterSubmit(event)">
-    <input type="email" placeholder="Your email address" required style="padding:12px 18px;border-radius:8px;border:1px solid #333;background:#0a0a0b;color:#e4e4e7;font-size:14px;min-width:260px;outline:none;" />
-    <button type="submit" style="padding:12px 28px;background:linear-gradient(135deg,#7c3aed,#6d28d9);color:#fff;border:none;border-radius:8px;font-weight:700;font-size:14px;cursor:pointer;transition:all 0.2s;">Subscribe</button>
+    <input type="email" id="nl-email" placeholder="Your email address" required
+      style="padding:12px 18px;border-radius:8px;border:1px solid #333;background:#0a0a0b;color:#e4e4e7;font-size:14px;min-width:260px;outline:none;transition:border-color 0.2s;" />
+    <button type="submit" id="nl-btn"
+      style="padding:12px 28px;background:linear-gradient(135deg,#7c3aed,#6d28d9);color:#fff;border:none;border-radius:8px;font-weight:700;font-size:14px;cursor:pointer;transition:opacity 0.2s;min-width:130px;">
+      Subscribe
+    </button>
   </form>
-  <p class="newsletter-msg" style="display:none;margin-top:12px;font-size:14px;color:#4ade80;"></p>
+  <p class="newsletter-msg" style="display:none;margin-top:12px;font-size:14px;color:#4ade80;transition:opacity 0.3s;"></p>
 </div>
 <script>
 function handleNewsletterSubmit(e) {
   e.preventDefault();
-  var email = e.target.querySelector('input[type="email"]').value;
-  var msg = e.target.parentElement.querySelector('.newsletter-msg');
+  var btn = document.getElementById('nl-btn');
+  var input = document.getElementById('nl-email');
+  var msg = document.querySelector('.newsletter-msg');
+  var email = input.value.trim();
+
+  // Basic validation
+  if (!email || !email.includes('@') || !email.includes('.')) {
+    msg.style.display = 'block';
+    msg.textContent = 'Please enter a valid email address.';
+    msg.style.color = '#ef4444';
+    return;
+  }
+
+  // Loading state
+  var orig = btn.textContent;
+  btn.textContent = 'Subscribing...';
+  btn.style.opacity = '0.7';
+  btn.disabled = true;
+  msg.style.display = 'none';
+
   fetch('https://connect.mailerlite.com/subscribe/YOUR_FORM_ID', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ email: email })
   }).then(function(r) {
+    btn.textContent = orig;
+    btn.style.opacity = '1';
+    btn.disabled = false;
     if (r.ok) {
       msg.style.display = 'block';
-      msg.textContent = 'Subscribed! Check your inbox for confirmation.';
+      msg.textContent = '✅ Subscribed! Check your inbox.';
       msg.style.color = '#4ade80';
-      e.target.reset();
+      input.value = '';
     } else {
       msg.style.display = 'block';
       msg.textContent = 'Something went wrong. Please try again.';
       msg.style.color = '#ef4444';
     }
   }).catch(function() {
+    btn.textContent = orig;
+    btn.style.opacity = '1';
+    btn.disabled = false;
     msg.style.display = 'block';
-    msg.textContent = 'Something went wrong. Please try again.';
+    msg.textContent = 'Network error. Please try again.';
     msg.style.color = '#ef4444';
   });
   return false;
