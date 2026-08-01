@@ -84,6 +84,15 @@
             y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
         })(window, document, "clarity", "script", "wps11oi5a1");
     </script>
+<!-- MailerLite Universal -->
+<script>
+    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+    ml('account', '2382954');
+</script>
+<!-- End MailerLite Universal -->
 </head>
 <body>
 <div id="reading-progress"></div>
@@ -153,40 +162,9 @@
 <div class="newsletter-signup" style="background:linear-gradient(135deg,rgba(124,58,237,0.06),rgba(124,58,237,0.02));border:1px solid rgba(124,58,237,0.15);border-radius:14px;padding:36px;margin:40px auto 0;max-width:560px;text-align:center;">
   <h4 style="font-size:18px;margin-bottom:8px;">Get the Best AI Tool Deals in Your Inbox</h4>
   <p style="font-size:14px;color:#a1a1aa;margin-bottom:20px;">One email per month — new tools, price drops, and honest comparisons. No spam, unsubscribe anytime.</p>
-  <form class="newsletter-form" style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;" onsubmit="handleNewsletterSubmit(event)">
-    <input type="email" placeholder="Your email address" required style="padding:12px 18px;border-radius:8px;border:1px solid #333;background:#0a0a0b;color:#e4e4e7;font-size:14px;min-width:260px;outline:none;" />
-    <button type="submit" style="padding:12px 28px;background:linear-gradient(135deg,#7c3aed,#6d28d9);color:#fff;border:none;border-radius:8px;font-weight:700;font-size:14px;cursor:pointer;transition:all 0.2s;">Subscribe</button>
-  </form>
-  <p class="newsletter-msg" style="display:none;margin-top:12px;font-size:14px;color:#4ade80;"></p>
+  <div class="ml-embedded" data-form="Rm1hy0"></div>
 </div>
-<script>
-function handleNewsletterSubmit(e) {
-  e.preventDefault();
-  var email = e.target.querySelector('input[type="email"]').value;
-  var msg = e.target.parentElement.querySelector('.newsletter-msg');
-  fetch('https://connect.mailerlite.com/subscribe/YOUR_FORM_ID', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ email: email })
-  }).then(function(r) {
-    if (r.ok) {
-      msg.style.display = 'block';
-      msg.textContent = 'Subscribed! Check your inbox for confirmation.';
-      msg.style.color = '#4ade80';
-      e.target.reset();
-    } else {
-      msg.style.display = 'block';
-      msg.textContent = 'Something went wrong. Please try again.';
-      msg.style.color = '#ef4444';
-    }
-  }).catch(function() {
-    msg.style.display = 'block';
-    msg.textContent = 'Something went wrong. Please try again.';
-    msg.style.color = '#ef4444';
-  });
-  return false;
-}
-</script>
+
     </footer>
 </div>
 <script>window.addEventListener("scroll",function(){var s=document.body.scrollTop||document.documentElement.scrollTop;var h=document.documentElement.scrollHeight-document.documentElement.clientHeight;document.getElementById("reading-progress").style.width=(s/h)*100+"%"});</script>
