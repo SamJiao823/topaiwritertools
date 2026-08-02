@@ -1,0 +1,27 @@
+# ===== topaiwritertools.com .gitignore =====
+# 目的：防止下次 git push 时把内部文件/密钥公开上线（项目为 Cloudflare Pages git 自动部署）
+# 规则：公开上线只需要 *.html, og-image.png, robots.txt, sitemap.xml, _headers, README.md, assets/AI-Writing-Prompts-Pack.pdf
+
+# --- 系统文件 ---
+.DS_Store
+Thumbs.db
+
+# --- 密钥/凭据（绝对不要提交） ---
+tools/
+*.config.json
+
+# --- 内部文档与计划（备份到飞书/本地，不上线） ---
+docs/
+_backup_phase0/
+.claude/
+
+# --- 内部内容草稿 ---
+zh-content/
+
+# --- 诱饵源文件（PDF 才是对外交付物，源文件公开会让人白拿） ---
+assets/prompt-pack-100.md
+assets/ai-writing-prompts-pack.html
+assets/ecommerce-copy-pack.md
+assets/ecommerce-copy-pack.html
+# 付费产品 PDF（只在 Payhip 出售，绝不能公开）
+assets/E-Commerce-Copy-Pack.pdf

@@ -13,6 +13,11 @@
         gtag('js', new Date());
         gtag('config', 'G-NK9GH5PF2Y');
     </script>
+<script>
+/* Outbound & affiliate click tracking (GA4) - injected Phase 0 */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e.target.closest('a'):null;if(!a)return;var h=a.getAttribute('href')||'';if(h.indexOf('http')!==0||h.indexOf('topaiwritertools.com')>-1)return;var isAff=(a.getAttribute('rel')||'').indexOf('sponsored')>-1;var tool=h.replace(/^https?:\/\//,'').split('/')[0];gtag('event',isAff?'affiliate_click':'outbound_click',{event_category:'outbound',event_label:tool,transport_type:'beacon'});},true);
+</script>
+
     <meta name="description" content="Honest AI writing tool reviews based on 30-day deep testing. Compare Jasper, Writesonic, Rytr & more. Tutorials, comparisons, and real data.">
     <meta name="robots" content="index, follow" />
     <!-- Open Graph -->
@@ -241,7 +246,7 @@
                     </tr>
                     <tr>
                         <td></td>
-                        <td class="btn-cell"><a href="https://www.jasper.ai" class="btn-sm" target="_blank" rel="nofollow sponsored">Try Jasper →</a></td>
+                        <td class="btn-cell"><a href="https://jasper.ai?fpr=topaiwritertools" class="btn-sm" target="_blank" rel="nofollow sponsored">Try Jasper →</a></td>
                         <td class="btn-cell"><a href="https://www.copy.ai" class="btn-sm" target="_blank" rel="nofollow sponsored">Try Copy.ai →</a></td>
                         <td class="btn-cell"><a href="https://writesonic.com" class="btn-sm" target="_blank" rel="nofollow sponsored">Try Writesonic →</a></td>
                         <td class="btn-cell"><a href="https://rytr.me?via=zhao-tianjun" class="btn-sm" target="_blank" rel="nofollow sponsored">Try Rytr →</a></td>
