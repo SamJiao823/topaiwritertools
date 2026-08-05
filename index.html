@@ -89,6 +89,15 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
 
         /* Section titles */
         .section-title { font-size: 28px; font-weight: 700; margin-bottom: 8px; letter-spacing: -0.02em; }
+        .featured-product{display:flex;align-items:center;gap:28px;background:linear-gradient(135deg,rgba(139,92,246,.22),rgba(255,138,92,.12));border:1px solid rgba(157,123,255,.45);border-radius:20px;padding:30px;margin:36px 0 44px}
+        .featured-img{width:200px;border-radius:12px;border:1px solid rgba(157,123,255,.5);box-shadow:0 12px 34px rgba(124,58,237,.35)}
+        .featured-badge{display:inline-block;background:rgba(255,138,92,.15);border:1px solid rgba(255,138,92,.4);color:#ff8a5c;padding:5px 14px;border-radius:100px;font-size:12px;font-weight:600;margin-bottom:12px}
+        .featured-content h2{font-family:'Fraunces',serif;font-size:26px;color:#fff;margin-bottom:10px}
+        .featured-content p{color:#cfc4b4;font-size:15px;margin-bottom:14px}
+        .featured-price{font-size:22px;color:#ff8a5c;font-weight:800;margin-bottom:14px}.featured-price s{color:#8b83a6;font-size:15px}
+        .featured-btn{display:inline-block;padding:12px 28px;background:linear-gradient(135deg,#ff8a5c,#ff6b4a);color:#2b1208;border-radius:10px;font-weight:700;text-decoration:none;transition:all .2s}
+        .featured-btn:hover{transform:translateY(-2px)}
+        @media(max-width:640px){.featured-product{flex-direction:column;text-align:center}.featured-img{width:160px}}
         .section-sub { color: #71717a; font-size: 16px; margin-bottom: 32px; }
 
         /* Footer */
@@ -184,6 +193,18 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
                 <a href="/how-we-test" class="btn-sm" style="text-decoration:none;">How We Test</a>
             </div>
             <p style="max-width:720px;margin:18px auto 0;color:#c4b5fd;font-size:15px;">A quick starting point for writers, marketers, and SEO teams who want a faster way to pick the right AI writing tool.</p>
+        </section>
+
+        <!-- Featured Product -->
+        <section class="featured-product">
+            <img src="/assets/ecommerce-copy-pack-cover.png" alt="The E-Commerce Copy Pack" class="featured-img">
+            <div class="featured-content">
+                <span class="featured-badge">💰 Our Product</span>
+                <h2>The E-Commerce Copy Pack</h2>
+                <p>50+ tested prompts to write product pages, ads &amp; emails that sell. Built from 30 days of real testing.</p>
+                <div class="featured-price">$9.99 <s>$19</s> <span style="font-size:13px;color:#8b83a6;font-weight:400;">one-time · instant download</span></div>
+                <a class="featured-btn" href="/ecommerce-copy-pack">Get the Pack →</a>
+            </div>
         </section>
 
         <!-- Quick Comparison Table -->
