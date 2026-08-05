@@ -1,0 +1,36 @@
+# TopAIWritingTools.com
+
+> AI writing tools review site — honest, data-driven reviews based on 30 days of hands-on testing per tool. We compare Jasper, Writesonic, Rytr, ChatGPT, Claude, Grammarly, Copy.ai, Hypotenuse, and more.
+
+## About
+
+TopAIWritingTools.com is an independent review site that tests AI writing tools hands-on for 30 days before recommending them. We publish honest, data-driven reviews, side-by-side comparisons, buyer's guides, and practical tutorials for writers, marketers, freelancers, and e-commerce sellers. Our testing covers output quality, editing time, SEO features, pricing value, and real conversion feel.
+
+## Key Pages
+
+- [Best AI Writing Tools 2026 (homepage)](https://topaiwritertools.com/): quick comparison of the top tools
+- [Best AI Writing Tools for E-Commerce](https://topaiwritertools.com/best-ai-writing-tools-for-ecommerce): product descriptions that sell
+- [Best Cheap AI Writing Tools](https://topaiwritertools.com/best-cheap-ai-writing-tools): quality under $20/mo
+- [Rytr vs Writesonic](https://topaiwritertools.com/rytr-vs-writesonic): head-to-head comparison
+- [ChatGPT vs Claude](https://topaiwritertools.com/chatgpt-vs-claude): which writes better
+- [Rytr 30-Day Review](https://topaiwritertools.com/rytr-review)
+- [Writesonic 30-Day Review](https://topaiwritertools.com/writesonic-review)
+- [Jasper Review](https://topaiwritertools.com/jasper-review)
+- [Grammarly Review](https://topaiwritertools.com/grammarly-review)
+- [Claude Pro Review](https://topaiwritertools.com/claude-pro-review)
+- [Copy.ai Review](https://topaiwritertools.com/copy-ai-review)
+- [Hypotenuse AI Review](https://topaiwritertools.com/hypotenuse-ai-review)
+- [100+ AI Writing Prompts (Free)](https://topaiwritertools.com/ai-writing-prompts): tested copy-paste prompts
+- [The E-Commerce Copy Pack](https://topaiwritertools.com/ecommerce-copy-pack): 50+ tested prompts for product pages, listings, ads, emails ($9.99)
+
+## Product
+
+The E-Commerce Copy Pack — 50+ copy-paste prompts for product descriptions, Amazon listings, ads, emails, and social. Built from 30 days of real testing. One-time $9.99, instant download via Payhip.
+
+## Methodology
+
+Every tool is tested hands-on for 30 days across real use cases before review. We measure output quality (blind-rated), editing time, SEO readiness, and value for money. See our [How We Test](https://topaiwritertools.com/how-we-test) page.
+
+## Contact
+
+hello@topaiwritertools.com
