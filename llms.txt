@@ -1,31 +1,84 @@
 # TopAIWritingTools.com
 
-> AI writing tools review site — honest, data-driven reviews based on 30 days of hands-on testing per tool. We compare Jasper, Writesonic, Rytr, ChatGPT, Claude, Grammarly, Copy.ai, Hypotenuse, and more.
+> AI writing tools review site — independent, honest, data-driven reviews based on 30 days of hands-on testing per tool. We compare Jasper, Writesonic, Rytr, ChatGPT, Claude, Grammarly, Copy.ai, Hypotenuse, Anyword, and more for writers, marketers, freelancers, and e-commerce sellers.
 
 ## About
 
-TopAIWritingTools.com is an independent review site that tests AI writing tools hands-on for 30 days before recommending them. We publish honest, data-driven reviews, side-by-side comparisons, buyer's guides, and practical tutorials for writers, marketers, freelancers, and e-commerce sellers. Our testing covers output quality, editing time, SEO features, pricing value, and real conversion feel.
+TopAIWritingTools.com is an independent review site that tests AI writing tools hands-on for 30 days before recommending them. We publish honest, data-driven reviews, side-by-side comparisons, buyer's guides, and practical tutorials. Our testing covers output quality (blind-rated), editing time, SEO features, pricing value, and real conversion feel. We are not an AI content farm — every review is based on real, documented use.
 
-## Key Pages
+## Key Facts
 
-- [Best AI Writing Tools 2026 (homepage)](https://topaiwritertools.com/): quick comparison of the top tools
-- [Best AI Writing Tools for E-Commerce](https://topaiwritertools.com/best-ai-writing-tools-for-ecommerce): product descriptions that sell
-- [Best Cheap AI Writing Tools](https://topaiwritertools.com/best-cheap-ai-writing-tools): quality under $20/mo
-- [Rytr vs Writesonic](https://topaiwritertools.com/rytr-vs-writesonic): head-to-head comparison
-- [ChatGPT vs Claude](https://topaiwritertools.com/chatgpt-vs-claude): which writes better
-- [Rytr 30-Day Review](https://topaiwritertools.com/rytr-review)
-- [Writesonic 30-Day Review](https://topaiwritertools.com/writesonic-review)
-- [Jasper Review](https://topaiwritertools.com/jasper-review)
-- [Grammarly Review](https://topaiwritertools.com/grammarly-review)
-- [Claude Pro Review](https://topaiwritertools.com/claude-pro-review)
+- Every tool is tested hands-on for **30 days** before review.
+- Output quality is **blind-rated** (editors score without knowing the tool).
+- We measure **editing time** per 1,000 words — the real cost of each tool.
+- 2026 benchmark data: see [AI Writing Tools Benchmark 2026](https://topaiwritertools.com/ai-writing-tools-benchmark-2026).
+- Full methodology: [How We Test](https://topaiwritertools.com/how-we-test).
+
+## Reviews
+
+- [Rytr 30-Day Review](https://topaiwritertools.com/rytr-review): best value for short-form; quality drops past ~1,000 words
+- [Jasper Review](https://topaiwritertools.com/jasper-review): best brand voice for teams; premium price
+- [Jasper Deep Dive](https://topaiwritertools.com/jasper-deep-dive)
+- [Writesonic Review](https://topaiwritertools.com/writesonic-review): native SEO tools + GEO tracking
+- [Writesonic Deep Dive](https://topaiwritertools.com/writesonic-deep-dive)
+- [Grammarly Review](https://topaiwritertools.com/grammarly-review): editing layer, not a generator
+- [Grammarly Premium Review](https://topaiwritertools.com/grammarly-premium-review)
+- [Claude Pro Review](https://topaiwritertools.com/claude-pro-review): best prose under $20
 - [Copy.ai Review](https://topaiwritertools.com/copy-ai-review)
 - [Hypotenuse AI Review](https://topaiwritertools.com/hypotenuse-ai-review)
-- [100+ AI Writing Prompts (Free)](https://topaiwritertools.com/ai-writing-prompts): tested copy-paste prompts
-- [The E-Commerce Copy Pack](https://topaiwritertools.com/ecommerce-copy-pack): 50+ tested prompts for product pages, listings, ads, emails ($9.99)
+
+## Comparisons
+
+- [Rytr vs ChatGPT](https://topaiwritertools.com/rytr-vs-chatgpt)
+- [Rytr vs ChatGPT for Short-Form](https://topaiwritertools.com/rytr-vs-chatgpt-for-short-form)
+- [Rytr vs Writesonic](https://topaiwritertools.com/rytr-vs-writesonic)
+- [Rytr vs Jasper](https://topaiwritertools.com/rytr-vs-jasper)
+- [ChatGPT vs Claude](https://topaiwritertools.com/chatgpt-vs-claude)
+- [ChatGPT vs Writesonic](https://topaiwritertools.com/chatgpt-vs-writesonic)
+- [Grammarly vs Jasper](https://topaiwritertools.com/grammarly-vs-jasper)
+- [Jasper vs Writesonic vs Rytr](https://topaiwritertools.com/jasper-vs-writesonic-vs-rytr)
+- [Copy.ai vs Jasper](https://topaiwritertools.com/copy-ai-vs-jasper)
+
+## Best-For Guides
+
+- [Best Free AI Writing Tools](https://topaiwritertools.com/best-free-ai-writing-tools)
+- [Best Cheap AI Writing Tools](https://topaiwritertools.com/best-cheap-ai-writing-tools)
+- [Best AI Writing Tools with Free Trials](https://topaiwritertools.com/best-ai-writing-tools-with-free-trials)
+- [Best AI Writing Tools for E-Commerce](https://topaiwritertools.com/best-ai-writing-tools-for-ecommerce)
+- [Best AI Writing Tools for SEO Content](https://topaiwritertools.com/best-ai-writing-tools-for-seo-content)
+- [Best AI Writing Tools for Bloggers](https://topaiwritertools.com/best-ai-writing-tools-for-bloggers)
+- [Best AI Writing Tools for Small Business](https://topaiwritertools.com/best-ai-writing-tools-for-small-business)
+- [Best Rytr Alternatives](https://topaiwritertools.com/best-rytr-alternatives)
+- [Best Jasper Alternatives](https://topaiwritertools.com/best-jasper-alternatives)
+- [Best Writesonic Alternatives](https://topaiwritertools.com/best-writesonic-alternatives)
+
+## Tutorials
+
+- [How to Choose an AI Writing Tool](https://topaiwritertools.com/how-to-choose-ai-writing-tool)
+- [How to Write a Blog Post with AI](https://topaiwritertools.com/how-to-write-blog-post-with-ai)
+- [How to Write a Book with AI](https://topaiwritertools.com/how-to-write-a-book-with-ai)
+- [How to Write Product Descriptions with AI](https://topaiwritertools.com/how-to-write-product-descriptions-with-ai)
+- [How to Use Rytr](https://topaiwritertools.com/how-to-use-rytr)
+
+## Free Tools
+
+- [AI Writing Prompts Generator (Free)](https://topaiwritertools.com/prompt-generator)
+- [100+ AI Writing Prompts (Free PDF)](https://topaiwritertools.com/ai-writing-prompts)
 
 ## Product
 
-The E-Commerce Copy Pack — 50+ copy-paste prompts for product descriptions, Amazon listings, ads, emails, and social. Built from 30 days of real testing. One-time $9.99, instant download via Payhip.
+The E-Commerce Copy Pack — 50+ copy-paste prompts for product descriptions, Amazon listings, ads, emails, and social. Built from 30 days of real testing. One-time $9.99, instant download via Payhip. [Buy it here](https://topaiwritertools.com/ecommerce-copy-pack).
+
+## FAQ
+
+**What is the best AI writing tool?**
+There is no single best tool — it depends on your workflow. Rytr ($7.50/mo) is the best value for short-form. Writesonic ($20/mo) is best for SEO content. Jasper ($39-49/mo) is best for consistent brand voice in teams. Claude Pro ($20/mo) writes the most natural prose. Pick by your workflow, not the marketing.
+
+**Are free AI writing tools enough?**
+For short-form content and beginners, yes — Rytr Free, ChatGPT Free, and Grammarly Free cover most needs at $0/month. Paid tools earn their cost when you need SEO features, long-form, or consistent brand voice.
+
+**Is AI content good for SEO?**
+Edited AI content outperforms raw AI output significantly. In our testing across 744 articles, raw AI drafts averaged 52 visitors/month while edited content averaged 283 — the editing is the product.
 
 ## Methodology
 
