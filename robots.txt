@@ -20,6 +20,13 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
+# ChatGPT / OpenAI retrieval crawlers (critical for GEO — missing before 2026-08-06)
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
 # Block spam crawlers only
 User-agent: Bytespider
 Disallow: /
