@@ -33,7 +33,112 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
       {"@type":"Question","name":"Which AI tools do these prompts work with?","acceptedAnswer":{"@type":"Answer","text":"All of them — ChatGPT, Claude, Gemini, Jasper, and Writesonic. They're model-agnostic copy prompts."}},
       {"@type":"Question","name":"Is there a refund?","acceptedAnswer":{"@type":"Answer","text":"Yes — if the pack isn't useful, email us within 30 days for a full refund. No questions asked."}},
       {"@type":"Question","name":"Is this different from the free 100+ prompt pack?","acceptedAnswer":{"@type":"Answer","text":"Yes. The free pack has 10 general e-commerce prompts. This paid pack has 50+ e-commerce-specific prompts organized by workflow."}}
-    ]}</script>    <style>
+    ]}</script>    <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/inter-normal-400-1.woff2" crossorigin>
+    <style>
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/assets/fonts/inter-normal-400-1.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/assets/fonts/inter-normal-500-1.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/assets/fonts/inter-normal-600-1.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/assets/fonts/inter-normal-700-1.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(/assets/fonts/inter-normal-800-1.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Fraunces';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/assets/fonts/fraunces-italic-400-1.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/assets/fonts/fraunces-normal-500-1.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/assets/fonts/fraunces-normal-600-1.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/assets/fonts/fraunces-normal-700-1.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/assets/fonts/manrope-normal-400-1.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/assets/fonts/manrope-normal-500-1.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/assets/fonts/manrope-normal-600-1.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/assets/fonts/manrope-normal-700-1.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
         :root{--bg:#150b28;--bg-soft:#1f1238;--card:#2a1a4a;--card-border:#4a2f7a;--ink:#f7f3ff;--ink-soft:#d8cef0;--muted:#a99dc4;--purple:#9d7bff;--purple-deep:#8b5cf6;--coral:#ff8a5c;--coral-deep:#ff6b4a;--teal:#5eead4;--cream:#fbf7ff}
         *{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
         body{font-family:'Manrope',sans-serif;background:var(--bg);color:var(--ink);line-height:1.7;overflow-x:hidden}
@@ -79,7 +184,7 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
             <div class="price-row"><span class="price">$9.99</span><span class="price-old">$19</span><span class="price-note">One-time · PDF · Lifetime access</span></div>
             <a class="buy-btn" href="https://payhip.com/b/ZKXGJ" target="_blank" rel="nofollow sponsored">Buy Now — Get Instant Access →</a>
             <div class="trust"><span class="tick">🔒</span> Secure via Payhip · Instant delivery · <span class="tick">♥</span> 30-day money-back, no questions</div>
-            <img src="/assets/ecommerce-copy-pack-cover.png" alt="The E-Commerce Copy Pack" style="width:240px;max-width:70%;margin-top:34px;border-radius:14px;box-shadow:0 18px 50px rgba(124,58,237,.35);border:1px solid rgba(167,139,250,.4)">
+            <img src="/assets/ecommerce-copy-pack-cover.png" alt="The E-Commerce Copy Pack" width="600" height="800" style="width:240px;max-width:70%;margin-top:34px;border-radius:14px;box-shadow:0 18px 50px rgba(124,58,237,.35);border:1px solid rgba(167,139,250,.4)">
         </div>
     </section>
     <section class="story">
