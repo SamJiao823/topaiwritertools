@@ -54,9 +54,36 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
         .hero h1 { font-size: 48px; font-weight: 600; letter-spacing: -0.02em; background: linear-gradient(135deg, #fff 0%, #9d7bff 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 16px; font-family:'Fraunces',serif; }
         .hero p { font-size: 18px; color: #a1a1aa; max-width: 600px; margin: 0 auto 32px; }
         .hero-badge { display: inline-block; background: rgba(139,92,246,0.15); border: 1px solid rgba(139,92,246,0.3); padding: 6px 16px; border-radius: 100px; font-size: 14px; color: #9d7bff; margin-bottom: 24px; }
+        .hero-mission { font-size: 15px; color: #c4b5fd; font-weight: 600; letter-spacing: 0.01em; margin: 0 auto 24px; max-width: 680px; border-left: 3px solid #7c3aed; padding-left: 14px; text-align: left; display: inline-block; }
+
+        /* Use-case finder */
+        .finder { margin: 0 0 64px; }
+        .finder-title { font-size: 20px; font-weight: 700; margin-bottom: 6px; }
+        .finder-sub { color: #71717a; font-size: 14px; margin-bottom: 20px; }
+        .finder-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; }
+        .finder-card { background: #141416; border: 1px solid #1f1f23; border-radius: 12px; padding: 20px 18px; text-decoration: none; color: #e4e4e7; transition: all 0.2s; display: block; }
+        .finder-card:hover { border-color: #7c3aed; transform: translateY(-2px); background: rgba(124,58,237,0.06); }
+        .finder-card .fc-icon { font-size: 28px; margin-bottom: 10px; }
+        .finder-card .fc-label { font-size: 14px; font-weight: 700; margin-bottom: 4px; }
+        .finder-card .fc-desc { font-size: 12px; color: #71717a; line-height: 1.5; }
+
+        /* Section label */
+        .section-label { display: inline-block; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; padding: 4px 10px; border-radius: 6px; margin-bottom: 10px; }
+        .label-review { background: rgba(124,58,237,0.15); color: #a78bfa; }
+        .label-compare { background: rgba(52,211,153,0.12); color: #34d399; }
+        .label-guide { background: rgba(96,165,250,0.12); color: #60a5fa; }
+        .label-product { background: rgba(251,191,36,0.12); color: #fbbf24; }
+
+        /* Own product section */
+        .own-product { background: linear-gradient(135deg, rgba(251,191,36,0.06), rgba(251,191,36,0.02)); border: 1px solid rgba(251,191,36,0.2); border-radius: 16px; padding: 32px; margin-bottom: 80px; }
+        .own-product-inner { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; }
+        .own-product-text { flex: 1; min-width: 220px; }
+        .own-product-text h3 { font-size: 20px; font-weight: 700; margin-bottom: 8px; }
+        .own-product-text p { color: #a1a1aa; font-size: 14px; margin-bottom: 16px; }
+        .own-product-badge { display: inline-block; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; padding: 4px 10px; border-radius: 6px; background: rgba(251,191,36,0.15); color: #fbbf24; margin-bottom: 10px; }
 
         /* Comparison Table */
-        .table-wrap { background: #141416; border-radius: 16px; border: 1px solid #1f1f23; overflow-x: auto; margin-bottom: 80px; }
+        .table-wrap { background: #141416; border-radius: 16px; border: 1px solid #1f1f23; overflow-x: auto; margin-bottom: 80px; -webkit-overflow-scrolling: touch; }
         table { width: 100%; border-collapse: collapse; min-width: 700px; }
         th, td { padding: 16px 20px; text-align: left; border-bottom: 1px solid #1f1f23; font-size: 14px; }
         th { background: #1a1a1e; font-weight: 600; color: #a1a1aa; text-transform: uppercase; letter-spacing: 0.05em; font-size: 12px; }
@@ -98,6 +125,17 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
         .featured-btn{display:inline-block;padding:12px 28px;background:linear-gradient(135deg,#8b5cf6,#6d28d9);color:#fff;border-radius:10px;font-weight:700;text-decoration:none;transition:all .2s}
         .featured-btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(124,58,237,.35)}
         @media(max-width:640px){.featured-product{flex-direction:column;text-align:center}.featured-img{width:160px}}
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 32px; }
+            .hero-mission { font-size: 13px; }
+            .finder-grid { grid-template-columns: repeat(2, 1fr); }
+            .tools-grid { grid-template-columns: 1fr; }
+            .own-product-inner { flex-direction: column; }
+            th, td { padding: 10px 12px; font-size: 13px; }
+        }
+        @media (max-width: 480px) {
+            .finder-grid { grid-template-columns: 1fr; }
+        }
         .section-sub { color: #71717a; font-size: 16px; margin-bottom: 32px; }
 
         /* Footer */
@@ -188,17 +226,57 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
             <div class="hero-badge">Trusted by thousands of writers · Updated July 2026</div>
             <h1>Choose the Right AI Writing Tool Faster</h1>
             <p>We test AI writing tools with real data — 30-day deep reviews, side-by-side comparisons, and step-by-step tutorials. Find the one that fits your workflow, budget, and needs.</p>
+            <div class="hero-mission">🎯 Our mission: Help 1M people find AI writing tools suited to their use-cases — honest reviews, no fluff, no paid-only rankings.</div>
             <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:10px;">
+                <a href="#finder" class="btn-sm" style="text-decoration:none;">Find My Tool →</a>
                 <a href="#table" class="btn-sm" style="text-decoration:none;">Compare Tools</a>
-                <a href="/ai-writing-tool-finder" class="btn-sm" style="text-decoration:none;">🎯 Find Your Tool by Use Case</a>
                 <a href="/how-we-test" class="btn-sm" style="text-decoration:none;">How We Test</a>
             </div>
-            <p style="max-width:720px;margin:18px auto 0;color:#c4b5fd;font-size:15px;">A quick starting point for writers, marketers, and SEO teams who want a faster way to pick the right AI writing tool.</p>
+        </section>
+
+        <!-- Use-case Finder -->
+        <section class="finder" id="finder">
+            <div class="section-label label-compare">Find Your Fit</div>
+            <h2 class="finder-title">What kind of writer are you?</h2>
+            <p class="finder-sub">Pick your use-case and jump straight to the right tools — no scrolling required.</p>
+            <div class="finder-grid">
+                <a href="/best-free-ai-writing-tools" class="finder-card">
+                    <div class="fc-icon">💰</div>
+                    <div class="fc-label">Budget-Friendly</div>
+                    <div class="fc-desc">Best tools under $10/mo or free. Great for students and solo creators.</div>
+                </a>
+                <a href="/best-ai-writing-tools-for-seo-content" class="finder-card">
+                    <div class="fc-icon">🔍</div>
+                    <div class="fc-label">SEO-Focused</div>
+                    <div class="fc-desc">Tools with keyword research, GEO optimization, and ranking features.</div>
+                </a>
+                <a href="/ai-writing-for-marketing-teams" class="finder-card">
+                    <div class="fc-icon">🏢</div>
+                    <div class="fc-label">Team Use</div>
+                    <div class="fc-desc">Collaboration, brand voice controls, and workflow automation for teams.</div>
+                </a>
+                <a href="/best-ai-writing-tools-for-freelancers" class="finder-card">
+                    <div class="fc-icon">✍️</div>
+                    <div class="fc-label">Freelancers</div>
+                    <div class="fc-desc">Fast output, affordable plans, and tools that handle client work at scale.</div>
+                </a>
+                <a href="/best-ai-writing-tools-for-bloggers" class="finder-card">
+                    <div class="fc-icon">📝</div>
+                    <div class="fc-label">Bloggers</div>
+                    <div class="fc-desc">Long-form articles, content briefs, and SEO-ready blog post generators.</div>
+                </a>
+                <a href="/ai-writing-for-ecommerce" class="finder-card">
+                    <div class="fc-icon">🛒</div>
+                    <div class="fc-label">E-Commerce</div>
+                    <div class="fc-desc">Product descriptions, ad copy, and bulk writing for online stores.</div>
+                </a>
+            </div>
         </section>
 
         <!-- Quick Comparison Table -->
+        <div class="section-label label-compare">Side-by-Side</div>
         <h2 id="table" class="section-title">Quick Comparison</h2>
-        <p class="section-sub">See how they stack up at a glance</p>
+        <p class="section-sub">See how the top tools stack up at a glance</p>
         <div class="table-wrap">
             <table>
                 <thead>
@@ -272,8 +350,9 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
         </div>
 
         <!-- Tool Cards -->
+        <div class="section-label label-review">In-Depth Reviews</div>
         <h2 class="section-title">Detailed Reviews</h2>
-        <p class="section-sub">Deep dive into each tool</p>
+        <p class="section-sub">30-day deep tests with real data — not marketing copy</p>
         <div class="tools-grid">
             <div class="tool-card">
                 <span class="badge badge-best">🏆 Best Overall</span>
@@ -316,18 +395,24 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
             </div>
         </div>
 
-                <!-- Blog / Articles -->
-        <h2 class="section-title">Latest Reviews</h2>
-        <p class="section-sub">In-depth articles to help you choose the right tool</p>
-        <div class="tools-grid">
-            <div class="tool-card">
-                <span class="badge badge-value">💰 Our Product</span>
-                <h3>The E-Commerce Copy Pack</h3>
-                <div class="price-tag">$9.99</div>
-                <div class="price-label">one-time · instant download</div>
-                <p>50+ tested prompts to write product pages, ads &amp; emails that sell. Built from 30 days of real testing.</p>
-                <a href="/ecommerce-copy-pack" class="btn">Buy Now →</a>
+        <!-- Our Own Product — separate section -->
+        <div class="own-product">
+            <div class="own-product-inner">
+                <div class="own-product-text">
+                    <div class="own-product-badge">🛠 Made by Us</div>
+                    <h3>The E-Commerce Copy Pack</h3>
+                    <p>50+ tested prompts to write product pages, ads &amp; emails that sell. Built from 30 days of real testing — not a tool review, but a hands-on resource we actually use.</p>
+                    <a href="/ecommerce-copy-pack" class="btn-sm" style="text-decoration:none;">Get the Pack · $9.99 →</a>
+                </div>
+                <div style="font-size:56px;">📦</div>
             </div>
+        </div>
+
+        <!-- Blog / Articles -->
+        <div class="section-label label-guide">Guides &amp; Comparisons</div>
+        <h2 class="section-title">Latest Reviews &amp; Guides</h2>
+        <p class="section-sub">In-depth articles to help you choose the right tool for your use-case</p>
+        <div class="tools-grid">
             <div class="tool-card">
                 <span class="badge badge-best">🛒 New</span>
                 <h3>Best AI Writing Tools for E-Commerce (2026)</h3>
