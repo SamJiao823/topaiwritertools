@@ -15,6 +15,14 @@ docs/
 _backup_phase0/
 .claude/
 
+# --- 内部自动化脚本（含渠道规则/人类化方法论，公开会被复制） ---
+scripts/
+
+# --- 本地设计草稿（X 头像/YouTube banner/Shorts 卡，别上线） ---
+assets/x-profile/
+assets/youtube-banner-source.html
+assets/youtube-shorts1-cards/
+
 # --- 内部内容草稿 ---
 zh-content/
 
@@ -25,3 +33,4 @@ assets/ecommerce-copy-pack.md
 assets/ecommerce-copy-pack.html
 # 付费产品 PDF（只在 Payhip 出售，绝不能公开）
 assets/E-Commerce-Copy-Pack.pdf
+.gstack/
