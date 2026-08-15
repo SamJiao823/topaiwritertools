@@ -13,6 +13,7 @@ tools/
 # --- 内部文档与计划（备份到飞书/本地，不上线） ---
 docs/
 _backup_phase0/
+_backup_writesonic_swap/
 .claude/
 
 # --- 内部自动化脚本（含渠道规则/人类化方法论，公开会被复制） ---
