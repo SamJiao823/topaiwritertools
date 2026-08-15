@@ -1,5 +1,3 @@
-# www → non-www 全站 301（消掉重复主机，canonical 已指向 non-www）
-www.topaiwritertools.com/* https://topaiwritertools.com/:splat 301
 /best-ai-writing-tools-for-amazon-sellers /ai-writing-tools-for-amazon-sellers 301
 /best-ai-writing-tools-for-amazon-sellers.html /ai-writing-tools-for-amazon-sellers 301
 /best-ai-writing-tools-for-beginners /ai-writing-tools-for-beginners 301
