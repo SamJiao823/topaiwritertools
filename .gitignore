@@ -18,6 +18,15 @@ _backup_writesonic_swap/
 
 # --- 内部自动化脚本（含渠道规则/人类化方法论，公开会被复制） ---
 scripts/
+# 文章构建脚本/模板（head 模板含埋点配置，不随站上线）
+_*.py
+_head-template.html
+_alternative-template.html
+
+# --- 本地浏览器自动化状态（Playwright 临时 profile，别上线） ---
+.fb-scan-profile/
+.x-main-profile/
+.x-tools-chrome/
 
 # --- 本地设计草稿（X 头像/YouTube banner/Shorts 卡，别上线） ---
 assets/x-profile/
