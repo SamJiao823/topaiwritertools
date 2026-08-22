@@ -1,8 +1,29 @@
+# ══ 全站安全头 + HTML 缓存（1h，部署后 1h 内全网收敛）══
 /*
-  Cache-Control: public, max-age=0, must-revalidate
+  Cache-Control: public, max-age=3600, must-revalidate
   Content-Security-Policy: default-src 'self' 'unsafe-inline' 'unsafe-eval' data: https:;
   Strict-Transport-Security: max-age=31536000; includeSubDomains
   X-Frame-Options: SAMEORIGIN
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: geolocation=(), microphone=(), camera=(), interest-cohort=()
+
+# ══ 静态资源（字体/图片/PDF）：内容寻址、改动极少 → 1 年 immutable ══
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+  Content-Security-Policy: default-src 'self' 'unsafe-inline' 'unsafe-eval' data: https:;
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), interest-cohort=()
+
+# ══ 爬虫/协议文件：1 天 ══
+/sitemap.xml
+  Cache-Control: public, max-age=86400
+
+/robots.txt
+  Cache-Control: public, max-age=86400
+
+/llms.txt
+  Cache-Control: public, max-age=86400
