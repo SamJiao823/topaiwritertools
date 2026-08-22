@@ -1,6 +1,5 @@
-# ══ 全站安全头 + HTML 缓存（1h，部署后 1h 内全网收敛）══
+# ══ 全站安全头（HTML 缓存交给 CF Cache Rule 管控，避免与 assets 规则合并冲突）══
 /*
-  Cache-Control: public, max-age=3600, must-revalidate
   Content-Security-Policy: default-src 'self' 'unsafe-inline' 'unsafe-eval' data: https:;
   Strict-Transport-Security: max-age=31536000; includeSubDomains
   X-Frame-Options: SAMEORIGIN
