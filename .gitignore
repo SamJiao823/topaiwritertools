@@ -16,6 +16,9 @@ _backup_phase0/
 _backup_writesonic_swap/
 .claude/
 
+# --- Python 构建缓存 ---
+__pycache__/
+
 # --- 内部自动化脚本（含渠道规则/人类化方法论，公开会被复制） ---
 scripts/
 # 文章构建脚本/模板（head 模板含埋点配置，不随站上线）
