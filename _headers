@@ -26,3 +26,9 @@
 
 /llms.txt
   Cache-Control: public, max-age=86400
+
+# ══ 模板泄露收尾：文件已从部署移除，此处兜底防索引（2026-09-12）══
+/_alternative-template
+  X-Robots-Tag: noindex, nofollow
+/_alternative-template.html
+  X-Robots-Tag: noindex, nofollow
