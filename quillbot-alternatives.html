@@ -151,12 +151,12 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
 <thead><tr><th>Tool</th><th>Suited for</th><th>Free plan</th><th>Starting price</th><th>Context-aware rewriting</th><th>30-day verdict</th></tr></thead>
 <tbody>
 <tr><td><strong>QuillBot</strong></td><td>Single-sentence rephrasing</td><td>125 words/pass, 2 modes</td><td>$8.33/mo (annual)</td><td><span class="cross">✗</span> Synonym swap, no meaning reasoning</td><td>Instant at its one job; keep for that (docs-verified, not in our generation benchmark)</td></tr>
-<tr><td><strong>Grammarly</strong></td><td>Grammar, clarity &amp; tone editing</td><td>Basic grammar &amp; spelling</td><td>$12/mo (annual)</td><td><span class="cross">✗</span> Corrects, doesn't fully re-reason</td><td>Best editing layer we've tested; not a rewriter</td></tr>
+<tr><td><strong>Grammarly</strong></td><td>Grammar, clarity &amp; tone editing</td><td>Basic grammar &amp; spelling</td><td>$12/mo (annual)</td><td><span class="cross">✗</span> Corrects, doesn't fully re-reason</td><td>Best editing layer in this category; not a rewriter</td></tr>
 <tr><td><strong>ChatGPT</strong></td><td>Context-aware paraphrasing</td><td>Full access, no hard cap</td><td>$0 / Plus $20/mo</td><td><span class="check">✓</span> Keeps intent &amp; tone</td><td>Strongest free rewrite-with-context (8/8, ~10 min editing)</td></tr>
 <tr><td><strong>Claude</strong></td><td>Highest-quality rewrite &amp; restyle</td><td>Free tier</td><td>$20/mo (Pro)</td><td><span class="check">✓</span> Best-preserved meaning &amp; voice</td><td>Best raw rewrite quality (9/9, ~8 min editing)</td></tr>
 </tbody>
 </table></div>
-<p>One honesty note on that table: QuillBot is not one of the tools in our main 30-day writing benchmark, and Grammarly is an editor rather than a generator — so their rows lean on documented limits and side-by-side editing tests rather than generation scores. For a rewriter, that is the right kind of evidence anyway.</p>
+<p>One honesty note on that table: QuillBot is not one of the tools in our main 30-day writing benchmark, and Grammarly is an editor rather than a generator — so their rows lean on documented limits and published feature information rather than generation scores. For a rewriter, that is the right kind of evidence anyway.</p>
 
 <h2>Best QuillBot Alternative for Academic Writing</h2>
 <p>For students, the honest headline is that QuillBot and the chat models do different academic jobs, and you want whichever matches the task.</p>
@@ -189,7 +189,7 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
             <p>Our 30-day benchmark found that editing time — not the subscription price — is what actually costs you. For the generative tools we timed how long a draft took to reach publish-ready: Claude ~8 minutes a piece, ChatGPT ~10 minutes, and budget generators ran far higher. The paraphrase tools sit outside that timer because their job is different — and their hidden cost is sneakier.</p>
             <ul>
                 <li><strong>QuillBot:</strong> seconds per sentence, but you pay the time back checking that a mechanical swap didn't change the meaning. On a short paragraph the free 125-word cap forces several passes.</li>
-                <li><strong>Grammarly Pro:</strong> in our seeded-error tests it caught roughly 90% of planted mistakes versus about 70% for the free plan — the editing-time savings are the reason to pay.</li>
+                <li><strong>Grammarly Pro:</strong> the paid tier adds full-sentence rewrites and tone controls on top of the free grammar checks — the extra coverage, not a measured accuracy gap, is the reason to pay.</li>
                 <li><strong>ChatGPT / Claude:</strong> slower per sentence than QuillBot (you write a prompt), but the rewrite reads like a human wrote it, so you edit less afterward.</li>
             </ul>
             <p>The lesson: a "fast" rewriter that silently drifts your meaning costs more in re-reading than a tool that gets it right in one pass. Speed at the keyboard is not the same as speed to a publishable sentence.</p>
@@ -207,7 +207,7 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
 <p><strong>Pick QuillBot if:</strong> your need is fast single-sentence rephrasing, or you want its citation and plagiarism tools. Not in our 30-day generation benchmark — pricing and limits verified from QuillBot's official documentation in our <a href="/quillbot-pricing-2026">QuillBot pricing guide</a>.</p>
 
 <h3>Grammarly — Best Grammar and Editing Layer</h3>
-<p><strong>✅ Where it wins:</strong> Best-in-class grammar, clarity, and tone correction that works everywhere you type — browser, Word, desktop — and it corrects your text instead of replacing it, so your voice survives. The free plan is genuinely useful, and Pro caught roughly 90% of seeded errors in our tests versus about 70% for free.</p>
+<p><strong>✅ Where it wins:</strong> Best-in-class grammar, clarity, and tone correction that works everywhere you type — browser, Word, desktop — and it corrects your text instead of replacing it, so your voice survives. The free plan is genuinely useful, and Pro adds full-sentence rewrites and tone controls that the free plan does not have.</p>
 <p><strong>⚠️ Where it falls short:</strong> It is not a rewrite engine. For a sentence you're stuck on, Grammarly's suggestions don't get you unstuck the way QuillBot's modes do, and it can over-edit creative writing if you let it.</p>
 <p><strong>Pick Grammarly if:</strong> mistakes, clarity, and tone — not phrasing — are your bottleneck. Full numbers are in our <a href="/grammarly-vs-quillbot">Grammarly vs QuillBot comparison</a>.</p>
 
@@ -222,7 +222,7 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
 <p><strong>Pick Claude if:</strong> the quality of the rewritten prose itself is what matters most — long restyles, tone unification, anything that has to read like one careful writer.</p>
 
 <h2>How We Tested These Tools</h2>
-<p>Generative tools (ChatGPT, Claude) ran our standard 30-day protocol: identical briefs and formats, blind-rated 1–10, and timed to a publish-ready draft. Editing tools needed a different test, so we ran side-by-side rewrite and seeded-error checks rather than generation scores: same awkward passages through each rewriter, same planted grammar mistakes through each editor, and a measure of how much human checking each result needed. QuillBot and Grammarly are not part of the eight tools in our main generation benchmark, so their pricing and limits were verified against official documentation. Full methodology on our <a href="/how-we-test">How We Test</a> page.</p>
+<p>Generative tools (ChatGPT, Claude) ran our standard 30-day protocol: identical briefs and formats, blind-rated 1–10, and timed to a publish-ready draft. Editing tools sat outside that protocol, so their rows here rest on each vendor's documented limits and published feature information rather than generation scores. QuillBot and Grammarly are not part of the tools in our main generation benchmark, so their pricing and limits were verified against official documentation. Full methodology on our <a href="/how-we-test">How We Test</a> page.</p>
 
 <h2>The One Mistake to Avoid</h2>
 <p>Treating "paraphrasing" as one job is the mistake. Most people swap QuillBot for another AI writer expecting better rewriting, then discover the mechanical tool was never their bottleneck — they needed a rewrite that understood their meaning, which means a prompt-based tool and a review pass. The reverse is also true: switching to ChatGPT or Claude for instant sentence rephrasing wastes your time, because a general model is slower than QuillBot at that one task. Match the tool to the failure — mistakes, meaning, or momentum — not to the marketing, and you will not overpay for a workflow you never use.</p>
