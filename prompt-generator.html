@@ -99,6 +99,39 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
 
     <div class="note"><strong>⚡ The Golden Rule:</strong> every prompt needs all 4 elements — Role + Context + Task + Constraints. Missing any one produces generic output. For best results, add a sample of YOUR writing as a style reference.</div>
 
+    <div style="max-width:760px;margin:48px auto 0;text-align:left;line-height:1.75;color:#d4d4d8;">
+<h2 style="font-size:24px;font-weight:700;color:#fff;margin:0 0 12px;">Why four elements, and why each one matters</h2>
+<p style="margin:0 0 16px;">Most weak prompts are not badly worded — they are <strong>missing one of four elements</strong>. The generator above assembles all four because each one removes a different kind of failure:</p>
+<ul style="margin:0 0 20px 22px;padding:0;">
+<li style="margin-bottom:8px;"><strong>Role</strong> sets the standards the output is judged against. "Act as a senior SEO content writer" produces different choices about structure and depth than no role at all.</li>
+<li style="margin-bottom:8px;"><strong>Context</strong> supplies what the model cannot know — your audience, your situation, what happened before. Missing context is the single most common cause of generic output.</li>
+<li style="margin-bottom:8px;"><strong>Task</strong> defines done. "Write about X" has no end state; "write a 120-word welcome email with one CTA" does.</li>
+<li style="margin-bottom:8px;"><strong>Constraints</strong> do the actual work. Tone, length, banned words, format — these are what make output usable without a rewrite.</li>
+</ul>
+<h2 style="font-size:24px;font-weight:700;color:#fff;margin:32px 0 12px;">A worked example</h2>
+<p style="margin:0 0 16px;">Here is what the four elements produce together, versus the same request without them:</p>
+<p style="margin:0 0 12px;"><strong>Without structure:</strong> "Write a product description for a coffee dripper."</p>
+<p style="margin:0 0 20px;color:#a1a1aa;">You will get something serviceable and forgettable, heavy on words like <em>premium</em> and <em>high-quality</em>, with no specifics — because none were supplied.</p>
+<p style="margin:0 0 12px;"><strong>With all four:</strong> "Act as a direct-response copywriter. Context: a product description for a ceramic pour-over dripper sold to home brewers who already own a grinder. Task: a 150-word description that leads with the benefit. Constraints: lead with the outcome, include two checkable specifications, handle the paper-taste objection, avoid the words premium and high-quality."</p>
+<p style="margin:0 0 20px;color:#a1a1aa;">Same tool, completely different output — because the constraints tell it what to avoid and what to include.</p>
+<h2 style="font-size:24px;font-weight:700;color:#fff;margin:32px 0 12px;">Five habits that improve any prompt</h2>
+<ol style="margin:0 0 20px 22px;padding:0;">
+<li style="margin-bottom:8px;"><strong>Give a style sample.</strong> Paste 200 words of your own writing and say "match this". Adjectives like "professional but friendly" get interpreted as generic business prose.</li>
+<li style="margin-bottom:8px;"><strong>State the length explicitly.</strong> "About 150 words" beats "brief", which the model reads loosely.</li>
+<li style="margin-bottom:8px;"><strong>Name the words to avoid.</strong> Banning <em>premium</em>, <em>high-quality</em>, <em>seamless</em> and <em>cutting-edge</em> removes most of the filler in one line.</li>
+<li style="margin-bottom:8px;"><strong>Ask for one section, not the whole piece.</strong> Long one-shot requests produce filler in the middle. Constrained sections stay dense.</li>
+<li style="margin-bottom:8px;"><strong>Ask it to critique before it rewrites.</strong> "List the problems, do not rewrite yet" produces better final output than asking for a rewrite immediately.</li>
+</ol>
+<h2 style="font-size:24px;font-weight:700;color:#fff;margin:32px 0 12px;">What no prompt can fix</h2>
+<ul style="margin:0 0 20px 22px;padding:0;">
+<li style="margin-bottom:8px;"><strong>Facts.</strong> Statistics, citations, prices and specifications are generated plausibly, not retrieved. Anything checkable must be checked by you.</li>
+<li style="margin-bottom:8px;"><strong>Experience.</strong> "We tested this for 30 days" cannot be produced by a model that has not tested anything. That part is yours.</li>
+<li style="margin-bottom:8px;"><strong>Judgement.</strong> Whether an argument is right, whether a claim is fair, whether the piece is worth publishing — a model will confidently produce all three badly.</li>
+</ul>
+<p style="margin:0;">Use the generator above to get the structure right, then do the parts that require you. That split is where the time saving actually comes from.</p>
+</div>
+
+
     <div class="cta">Want 100+ ready-made prompts? <a href="/ai-writing-prompts">Get the free pack →</a></div>
 
     <footer>TopAIWritingTools.com &copy; 2026 · <a href="/">Home</a> · <a href="/privacy">Privacy</a> · <a href="/affiliate-disclosure">Disclosure</a> · <a href="/ai-writing-tool-finder">Tool Finder</a></footer>
