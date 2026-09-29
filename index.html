@@ -287,7 +287,7 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
             <p>We test AI writing tools with real data — 30-day deep reviews, side-by-side comparisons, and step-by-step tutorials. Find the one that fits your workflow, budget, and needs.</p>
             <div class="hero-mission">🎯 Our mission: Help 1M people find AI writing tools suited to their use-cases — honest reviews, no fluff, no paid-only rankings.</div>
             <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:10px;">
-                <a href="#finder" class="btn-sm" style="text-decoration:none;">Find My Tool →</a>
+                <a href="#quiz" class="btn-sm" style="text-decoration:none;">Find My Tool →</a>
                 <a href="#table" class="btn-sm" style="text-decoration:none;">Compare Tools</a>
                 <a href="/how-we-test" class="btn-sm" style="text-decoration:none;">How We Test</a>
             </div>
@@ -297,6 +297,14 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
         <div class="scoreboard-wrap">
             <img src="/assets/scoreboard.svg" alt="Blind quality test scores out of 5: Jasper 5.0, Writesonic 4.0, Copy.ai 4.0, Rytr 3.0 — from 30-day testing" width="560" loading="lazy">
         </div>
+
+        <!-- 30-Second Tool Finder (interactive quiz) -->
+        <section id="quiz" class="quiz-section">
+            <div class="section-label label-compare">30-Second Quiz</div>
+            <h2 class="section-title">Not sure which tool? Answer 4 questions.</h2>
+            <p class="section-sub">Tell us what you write, your budget and your team size — we'll point you to one tool.</p>
+            <div id="tool-quiz"></div>
+        </section>
 
         <!-- Use-case Finder -->
         <section class="finder" id="finder">
@@ -715,6 +723,7 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
       document.addEventListener('keydown',function(e){if(e.key==='Escape')box.hidden=true;});
     })();
     </script>
+    <script src="/assets/quiz.js"></script>
 </body>
 </html>
 
