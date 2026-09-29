@@ -169,6 +169,39 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
 @font-face{font-family:'Fraunces';font-style:normal;font-weight:700;font-display:swap;src:url(/assets/fonts/fraunces-normal-700-1.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 @font-face{font-family:'Manrope';font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/manrope-normal-400-1.woff2) format('woff2')}
             .faq h3{margin-top:24px;margin-bottom:8px}.faq p{margin:0 0 12px}
+
+        /* Sticky site header + search */
+        .site-header{position:sticky;top:0;z-index:1000;background:rgba(10,10,11,.86);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid #1f1f23;padding:11px 0}
+        .sh-inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:18px}
+        .sh-logo{color:#fff;font-weight:700;font-size:15px;text-decoration:none;white-space:nowrap;display:flex;align-items:center;gap:8px}
+        .sh-logo .dot{width:22px;height:22px;border-radius:6px;background:linear-gradient(135deg,#7c3aed,#9d7bff);display:inline-flex;align-items:center;justify-content:center;color:#fff;font-size:11px;font-weight:800}
+        .sh-search{position:relative;flex:1;max-width:540px;margin:0 auto}
+        .sh-search input{width:100%;padding:10px 16px 10px 40px;border-radius:10px;border:1px solid #1f1f23;background:#141416;color:#e4e4e7;font-size:14px;outline:none;transition:border-color .2s}
+        .sh-search input:focus{border-color:#7c3aed}
+        .sh-search .s-ico{position:absolute;left:13px;top:50%;transform:translateY(-50%);color:#71717a;font-size:15px;pointer-events:none}
+        .search-results{position:absolute;top:48px;left:0;right:0;background:#141416;border:1px solid #1f1f23;border-radius:12px;max-height:440px;overflow-y:auto;z-index:1001;box-shadow:0 20px 50px rgba(0,0,0,.55)}
+        .search-results a{display:block;padding:12px 16px;border-bottom:1px solid #1f1f23;color:#e4e4e7;text-decoration:none}
+        .search-results a:last-child{border-bottom:none}
+        .search-results a:hover{background:rgba(124,58,237,.1)}
+        .sr-cat{font-size:11px;color:#9d7bff;text-transform:uppercase;letter-spacing:.05em;font-weight:700}
+        .sr-title{font-size:14px;font-weight:600;margin:2px 0}
+        .sr-desc{font-size:12px;color:#71717a;line-height:1.4}
+        .sr-empty{padding:16px;color:#71717a;font-size:13px}
+
+        /* Scoreboard image */
+        .scoreboard-wrap{margin:0 0 64px;text-align:center}
+        .scoreboard-wrap img{max-width:560px;width:100%;height:auto;border-radius:16px;border:1px solid #1f1f23}
+
+        /* Horizontal swipe for latest guides (mobile) */
+        .guides-hint{display:none;color:#71717a;font-size:12px;text-align:center;margin-bottom:14px}
+        .table-hint{display:none;color:#71717a;font-size:12px;margin:0 0 10px;font-weight:600}
+        @media(max-width:768px){
+            .guides-scroll{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:14px;-webkit-overflow-scrolling:touch}
+            .guides-scroll .tool-card{flex:0 0 82%;scroll-snap-align:start;margin-bottom:0}
+            .guides-hint{display:block}
+            .table-hint{display:block}
+            .table-wrap{position:relative}
+        }
     </style>
     <!-- Microsoft Clarity -->
     <script type="text/javascript">
@@ -236,6 +269,16 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
     <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/fraunces-normal-600-1.woff2" crossorigin>
 </head>
 <body>
+    <header class="site-header">
+        <div class="sh-inner">
+            <a href="/" class="sh-logo"><span class="dot">TW</span>Top AI Writing Tools</a>
+            <div class="sh-search">
+                <span class="s-ico">🔍</span>
+                <input type="search" id="site-search" placeholder="Search 220+ guides, reviews & comparisons…" autocomplete="off" aria-label="Search the site">
+                <div id="search-results" class="search-results" hidden></div>
+            </div>
+        </div>
+    </header>
     <div class="container">
         <!-- Hero -->
         <section class="hero">
@@ -249,6 +292,11 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
                 <a href="/how-we-test" class="btn-sm" style="text-decoration:none;">How We Test</a>
             </div>
         </section>
+
+        <!-- Scoreboard visual (real test data) -->
+        <div class="scoreboard-wrap">
+            <img src="/assets/scoreboard.svg" alt="Blind quality test scores out of 5: Jasper 5.0, Writesonic 4.0, Copy.ai 4.0, Rytr 3.0 — from 30-day testing" width="560" loading="lazy">
+        </div>
 
         <!-- Use-case Finder -->
         <section class="finder" id="finder">
@@ -313,6 +361,7 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
         <div class="section-label label-compare">Side-by-Side</div>
         <h2 id="table" class="section-title">Quick Comparison</h2>
         <p class="section-sub">See how the tools stack up at a glance</p>
+        <div class="table-hint">← Swipe left / right to see all 4 tools →</div>
         <div class="table-wrap">
             <table>
                 <thead>
@@ -438,7 +487,8 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
         <div class="section-label label-guide">Guides &amp; Comparisons</div>
         <h2 class="section-title">Latest Reviews &amp; Guides</h2>
         <p class="section-sub">In-depth articles to help you choose the right tool for your use-case</p>
-        <div class="tools-grid">
+        <div class="guides-hint">← Swipe to explore all guides →</div>
+        <div class="tools-grid guides-scroll">
             <div class="tool-card">
                 <span class="badge badge-best">🛒 New</span>
                 <h3>AI Writing Tools for E-Commerce (2026)</h3>
@@ -643,6 +693,28 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
 <a href="/claude-pricing-guide-2026" style="color:#9d7bff;">Claude Pricing 2026</a>
 </div></div></footer>
     </div>
+    <script>
+    (function(){
+      var idx=null, input=document.getElementById('site-search'), box=document.getElementById('search-results');
+      function load(){ if(idx) return Promise.resolve(idx); return fetch('/search-index.json').then(function(r){return r.json();}).then(function(d){idx=d;return idx;}); }
+      function esc(s){return (s||'').replace(/[&<>]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;'}[c];});}
+      function render(q){
+        if(!q){box.hidden=true;return;}
+        load().then(function(d){
+          var ql=q.toLowerCase(), hits=d.filter(function(p){return (p.title+' '+(p.desc||'')+' '+p.cat).toLowerCase().indexOf(ql)>-1;}).slice(0,8);
+          if(!hits.length){box.innerHTML='<div class="sr-empty">No results for “'+esc(q)+'”</div>';box.hidden=false;return;}
+          box.innerHTML=hits.map(function(p){
+            return '<a href="'+p.url+'"><div class="sr-cat">'+esc(p.cat)+'</div><div class="sr-title">'+esc(p.title)+'</div><div class="sr-desc">'+esc((p.desc||'').slice(0,95))+'</div></a>';
+          }).join('');
+          box.hidden=false;
+        }).catch(function(){box.hidden=true;});
+      }
+      input.addEventListener('input',function(){render(this.value.trim());});
+      input.addEventListener('focus',function(){if(this.value.trim())render(this.value.trim());});
+      document.addEventListener('click',function(e){if(!e.target.closest('.sh-search'))box.hidden=true;});
+      document.addEventListener('keydown',function(e){if(e.key==='Escape')box.hidden=true;});
+    })();
+    </script>
 </body>
 </html>
 

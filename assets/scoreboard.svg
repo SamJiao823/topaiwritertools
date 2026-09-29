@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 340" font-family="Inter, -apple-system, sans-serif">
+  <rect width="560" height="340" rx="16" fill="#141416" stroke="#1f1f23"/>
+  <text x="28" y="42" fill="#e4e4e7" font-size="18" font-weight="700">Blind Quality Test · Out of 5</text>
+  <text x="28" y="64" fill="#71717a" font-size="12">30-day tested · rated 1–10, normalised · Top AI Writing Tools</text>
+  <!-- Jasper -->
+  <text x="28" y="108" fill="#e4e4e7" font-size="14" font-weight="600">Jasper</text>
+  <rect x="120" y="96" width="340" height="14" rx="7" fill="#1f1f23"/>
+  <rect x="120" y="96" width="340" height="14" rx="7" fill="#7c3aed"/>
+  <text x="472" y="108" fill="#f59e0b" font-size="14" font-weight="700">5.0</text>
+  <!-- Writesonic -->
+  <text x="28" y="148" fill="#e4e4e7" font-size="14" font-weight="600">Writesonic</text>
+  <rect x="120" y="136" width="340" height="14" rx="7" fill="#1f1f23"/>
+  <rect x="120" y="136" width="272" height="14" rx="7" fill="#9d7bff"/>
+  <text x="472" y="148" fill="#f59e0b" font-size="14" font-weight="700">4.0</text>
+  <!-- Copy.ai -->
+  <text x="28" y="188" fill="#e4e4e7" font-size="14" font-weight="600">Copy.ai</text>
+  <rect x="120" y="176" width="340" height="14" rx="7" fill="#1f1f23"/>
+  <rect x="120" y="176" width="272" height="14" rx="7" fill="#9d7bff"/>
+  <text x="472" y="188" fill="#f59e0b" font-size="14" font-weight="700">4.0</text>
+  <!-- Rytr -->
+  <text x="28" y="228" fill="#e4e4e7" font-size="14" font-weight="600">Rytr</text>
+  <rect x="120" y="216" width="340" height="14" rx="7" fill="#1f1f23"/>
+  <rect x="120" y="216" width="204" height="14" rx="7" fill="#34d399"/>
+  <text x="472" y="228" fill="#f59e0b" font-size="14" font-weight="700">3.0</text>
+  <line x1="28" y1="262" x2="532" y2="262" stroke="#1f1f23"/>
+  <text x="28" y="290" fill="#a1a1aa" font-size="12">Scores from our 30-day blind test. Full methodology at</text>
+  <text x="28" y="308" fill="#9d7bff" font-size="12" font-weight="600">topaiwritertools.com/how-we-test</text>
+</svg>

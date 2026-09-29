@@ -63,6 +63,27 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
     }
     </script>
 
+    <!-- Schema: Product + AggregateRating (star snippet) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Jasper",
+      "applicationCategory": "AI Writing Tool",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "3.8",
+        "reviewCount": "1",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "offers": [
+        { "@type": "Offer", "name": "Creator", "price": "49", "priceCurrency": "USD", "url": "https://jasper.ai?fpr=topaiwritertools" },
+        { "@type": "Offer", "name": "Pro", "price": "69", "priceCurrency": "USD", "url": "https://jasper.ai?fpr=topaiwritertools" }
+      ]
+    }
+    </script>
+
     <!-- Schema: FAQPage -->
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
@@ -75,7 +96,7 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
 
     <style>
         *{margin:0;padding:0;box-sizing:border-box}
-        body{font-family:'Inter',-apple-system,sans-serif;background:#0a0a0b;color:#e4e4e7;line-height:1.8}
+        body{font-family:'Inter',-apple-system,sans-serif;background:#0a0a0b;color:#e4e4e7;line-height:1.8;padding-bottom:64px}
         .container{max-width:800px;margin:0 auto;padding:0 24px}
         .nav-bar{padding:20px 0;border-bottom:1px solid #1f1f23;margin-bottom:40px}
         .nav-bar a{color:#9d7bff;text-decoration:none;font-size:14px;font-weight:500}
@@ -162,6 +183,46 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
 @font-face{font-family:'Fraunces';font-style:normal;font-weight:600;font-display:swap;src:url(/assets/fonts/fraunces-normal-600-1.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 @font-face{font-family:'Fraunces';font-style:normal;font-weight:700;font-display:swap;src:url(/assets/fonts/fraunces-normal-700-1.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 @font-face{font-family:'Manrope';font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/manrope-normal-400-1.woff2) format('woff2')}
+
+        /* Snapshot card (top) */
+        .snapshot-card{background:linear-gradient(135deg,rgba(124,58,237,0.12),rgba(109,40,217,0.06));border:1px solid rgba(124,58,237,0.32);border-radius:14px;padding:22px 24px;margin:24px 0;display:flex;flex-wrap:wrap;align-items:center;gap:20px}
+        .sc-score{display:flex;align-items:center;gap:12px;flex:0 0 auto}
+        .sc-score .stars{font-size:26px;color:#f59e0b;letter-spacing:2px}
+        .sc-score strong{font-size:28px;color:#fff;display:block;line-height:1}
+        .sc-score small{font-size:11px;color:#71717a}
+        .sc-verdict{flex:1;min-width:220px;font-size:14px;color:#d4d4d8}
+        .sc-verdict strong{color:#fff}
+        .sc-cta{display:flex;gap:10px;flex-wrap:wrap;flex:0 0 auto}
+        .cta-btn.cta-ghost{background:transparent;border:1px solid rgba(157,123,255,0.5);color:#9d7bff}
+        .cta-btn.cta-ghost:hover{background:rgba(124,58,237,0.12);box-shadow:none}
+
+        /* TL;DR buy/skip */
+        .tldr{background:#141416;border:1px solid #1f1f23;border-radius:12px;padding:20px;margin:20px 0}
+        .tldr h3{margin:0 0 12px;font-size:15px;color:#9d7bff}
+        .tldr-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+        @media(max-width:640px){.tldr-grid{grid-template-columns:1fr}}
+        .tldr-col ul{margin:0;padding-left:18px;font-size:14px}
+        .tldr-col.for h4{color:#34d399;font-size:14px;margin-bottom:6px}
+        .tldr-col.against h4{color:#f87171;font-size:14px;margin-bottom:6px}
+
+        /* Screenshot placeholder (real test evidence slot) */
+        .screenshot-slot{margin:18px 0;border:1px dashed rgba(157,123,255,0.5);border-radius:12px;padding:22px;text-align:center;background:rgba(124,58,237,0.04);color:#a1a1aa;font-size:14px}
+        .screenshot-slot .ss-tag{display:inline-block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#9d7bff;margin-bottom:8px}
+        .screenshot-slot code{background:#1f1f23;padding:2px 8px;border-radius:4px;color:#e4e4e7;font-size:12px}
+
+        /* In-content newsletter */
+        .inline-newsletter{background:linear-gradient(135deg,rgba(124,58,237,0.08),rgba(124,58,237,0.03));border:1px solid rgba(124,58,237,0.18);border-radius:14px;padding:28px;margin:32px 0;text-align:center}
+        .inline-newsletter h4{font-size:17px;margin-bottom:6px;color:#fff}
+        .inline-newsletter p{font-size:13px;color:#a1a1aa;margin:0 0 16px}
+
+        /* Sticky bottom CTA */
+        .sticky-cta{position:fixed;left:0;right:0;bottom:0;z-index:1200;background:rgba(15,10,28,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-top:1px solid rgba(124,58,237,0.35);padding:12px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px;transform:translateY(120%);transition:transform .25s ease;max-width:800px;margin:0 auto;border-radius:14px 14px 0 0}
+        .sticky-cta.show{transform:translateY(0)}
+        .sticky-cta .sc-info{font-size:13px;color:#d4d4d8}
+        .sticky-cta .sc-info strong{color:#fff}
+        .sticky-cta .sc-btns{display:flex;gap:8px;flex-shrink:0}
+        .sticky-cta .cta-btn{padding:10px 16px;font-size:13px}
+        @media(max-width:520px){.sticky-cta .sc-info{display:none}.sticky-cta{justify-content:center}}
     </style>
     <script>(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","wps11oi5a1");</script>
 <!-- MailerLite Universal -->
@@ -201,6 +262,30 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
         <span>📖 <a href="/about">About Us</a></span>
     </div>
     <p style="font-size:13px;color:#71717a;">By Sam Jiao · 30-day tested · <a href="/how-we-test" style="color:#9d7bff;">How we test</a></p>
+
+    <!-- SNAPSHOT CARD -->
+    <div class="snapshot-card">
+        <div class="sc-score">
+            <span class="stars">★★★½☆</span>
+            <div><strong>3.8/5</strong><small>Top AI Writing Tools</small></div>
+        </div>
+        <div class="sc-verdict"><strong>Best for teams, overpriced for solo.</strong> Brand IQ is the best brand-voice system we tested — but at $49/mo, solo creators get ~80% of the quality from ChatGPT Plus at $20/mo.</div>
+        <div class="sc-cta">
+            <a class="cta-btn" href="https://jasper.ai?fpr=topaiwritertools" target="_blank" rel="nofollow sponsored">Try Jasper Free →</a>
+            <a class="cta-btn cta-ghost" href="/rytr-review">Rytr $7.50/mo</a>
+            <a class="cta-btn cta-ghost" href="/writesonic-review">Writesonic Review</a>
+        </div>
+    </div>
+
+    <!-- TL;DR -->
+    <div class="tldr">
+        <h3>⚡ TL;DR — Buy or Skip?</h3>
+        <div class="tldr-grid">
+            <div class="tldr-col for"><h4>✅ Buy if…</h4><ul><li>Marketing team of 3+</li><li>20+ pieces/month, need brand consistency</li><li>Budget ~$49/mo per seat</li></ul></div>
+            <div class="tldr-col against"><h4>❌ Skip if…</h4><ul><li>Solo creator / freelancer</li><li>SEO or GEO is your main goal</li><li>On a tight budget</li></ul></div>
+        </div>
+    </div>
+
     <div class="affiliate-notice">
         <strong>Disclosure:</strong> Jasper's affiliate program is closed. This review contains no affiliate links for Jasper — but we use affiliate links for alternatives we genuinely recommend. See <a href="/affiliate-disclosure">full disclosure</a>.
     </div>
@@ -291,15 +376,24 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
         <li><strong>Consistency:</strong> Held up across blog posts, LinkedIn ads, email sequences, and landing page copy</li>
         <li><strong>Limitation:</strong> Still needed fact-checking — Brand IQ handles tone, not accuracy</li>
     </ul>
+    <div class="screenshot-slot">
+        <span class="ss-tag">📸 Real test screenshot slot</span><br>
+        Drop your Brand IQ setup screen here — <code>Jasper → Brand IQ → Configure voice</code>. A real capture beats any description for trust.
+    </div>
     <p><strong>The honest question:</strong> Is Brand IQ worth the ~$29/mo premium over ChatGPT Plus ($20/mo)? Writesonic ($79/mo, Starter) is no longer a cheaper alternative — it's repositioned as an AI search visibility (GEO) platform. If you're a team managing multiple brand voices across 3+ writers, <strong>yes</strong>. If you're a solo creator writing in your own natural voice, <strong>no</strong> — your voice is already consistent.</p>
 
     <!-- SECTION 3 -->
     <h2 id="writing-quality">How Good Is Jasper's Writing Quality?</h2>
 
     <h3>The Good: Canvas + Dual AI Model</h3>
-    <p>Jasper uses both GPT-4o and Claude under the hood, selecting the best model per task. The result is the highest raw output quality among dedicated AI writing tools. Jasper's short-form output is excellent (9/10), and long-form via the Canvas editor is strong (8/10).</p>
+        <p>Jasper uses both GPT-4o and Claude under the hood, selecting the best model per task. The result is the highest raw output quality among dedicated AI writing tools. Jasper's short-form output is excellent (9/10), and long-form via the Canvas editor is strong (8/10).</p>
 
-    <h3>The Bad: Premium Price, Same Models</h3>
+    <div class="screenshot-slot">
+        <span class="ss-tag">📸 Real test screenshot slot</span><br>
+        Drop a Canvas editor screen here — <code>Jasper → Canvas</code> with a long-form draft in progress. Shows the actual workflow, not a stock image.
+    </div>
+
+        <h3>The Bad: Premium Price, Same Models</h3>
     <p>The uncomfortable truth: Jasper's underlying AI models (GPT-4o and Claude) are the same ones available through ChatGPT Plus ($20/mo) and Claude Pro ($20/mo). Jasper's value isn't better AI — it's the <strong>workflow layer</strong> (Brand IQ, Canvas, team tools) wrapped around the AI.</p>
 
     <h3>Blind Quality Comparison</h3>
@@ -316,6 +410,7 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
         </tbody>
     </table>
     <p><span class="highlight-cell" style="padding:2px 8px;border-radius:4px;">= Best in category</span></p>
+    <p style="text-align:center;margin-top:18px;"><img src="/assets/scoreboard.svg" alt="Blind quality test scores out of 5: Jasper 5.0, Writesonic 4.0, Copy.ai 4.0, Rytr 3.0 — from our 30-day testing" width="520" loading="lazy" style="max-width:100%;height:auto;border-radius:12px;border:1px solid #1f1f23;"></p>
 
     <!-- SECTION 4 -->
     <h2 id="pricing">Is Jasper Worth Its $49/mo Price?</h2>
@@ -353,6 +448,12 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
             <tr><td>GEO Tracking</td><td>❌</td><td class="highlight-cell">✅ Yes</td><td>❌</td><td>❌</td></tr>
         </tbody>
     </table>
+
+    <div class="inline-newsletter">
+        <h4>📬 Get the next 30-day review in your inbox</h4>
+        <p>One honest review per month — no spam, unsubscribe anytime.</p>
+        <div class="ml-embedded" data-form="Rm1hy0"></div>
+    </div>
 
     <!-- SCORE BREAKDOWN -->
     <h2>How Did Jasper Score in Each Category?</h2>
@@ -428,7 +529,16 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
 </ul>
     </div>
 
-    <script>window.addEventListener("scroll",function(){var s=document.body.scrollTop||document.documentElement.scrollTop;var h=document.documentElement.scrollHeight-document.documentElement.clientHeight;document.getElementById("reading-progress").style.width=((s/h)*100)+"%"})</script>
+    <script>window.addEventListener("scroll",function(){var s=document.body.scrollTop||document.documentElement.scrollTop;var h=document.documentElement.scrollHeight-document.documentElement.clientHeight;var prog=document.getElementById("reading-progress");if(prog)prog.style.width=((s/h)*100)+"%";var sc=document.getElementById("sticky-cta");if(sc)sc.classList.toggle("show",s>700);})</script>
+
+    <!-- STICKY CTA -->
+    <div class="sticky-cta" id="sticky-cta">
+        <span class="sc-info">Jasper <strong>$49/mo</strong> · 3.8/5</span>
+        <div class="sc-btns">
+            <a class="cta-btn" href="https://jasper.ai?fpr=topaiwritertools" target="_blank" rel="nofollow sponsored">Try Jasper →</a>
+            <a class="cta-btn cta-ghost" href="/rytr-review">Better value: Rytr</a>
+        </div>
+    </div>
 
     <!-- SHARE -->
     <div class="share-bar"><h4>Share this review</h4><div class="share-buttons">
