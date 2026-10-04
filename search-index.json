@@ -1336,5 +1336,65 @@
   "url": "/writesonic-vs-jasper",
   "desc": "Writesonic vs Jasper in 2026 — we tested both for 30 days. Pricing ($79 vs $39-49), SEO and AI search (GEO) features, output quality, and who each AI writer is actually for.",
   "cat": "Comparison"
+ },
+ {
+  "title": "AI Writing Tools for Airbnb Hosts (2026): Listings, House Rules & Guest Messages",
+  "url": "/ai-writing-tools-for-airbnb-hosts",
+  "desc": "AI writing tested against the actual Airbnb workload — listing copy, house rules, check-in messages and review replies. Where it saves hours, and where it costs you bookings.",
+  "cat": "Audience Guide"
+ },
+ {
+  "title": "AI Writing Tools for Etsy Sellers (2026): Titles, Descriptions & Listings",
+  "url": "/ai-writing-tools-for-etsy-sellers",
+  "desc": "AI writing tools tested for 30 days, judged against what Etsy sellers actually list — titles, descriptions, policies and review replies. What worked, what got us flagged.",
+  "cat": "Audience Guide"
+ },
+ {
+  "title": "AI Writing Tools for Event Planners (2026): Run-of-Show, Copy & Vendor Emails",
+  "url": "/ai-writing-tools-for-event-planners",
+  "desc": "Events are 200 emails and one schedule. We tested AI writing on the planner workload — run-of-show docs, sponsorship decks, venue copy and vendor chasing.",
+  "cat": "Audience Guide"
+ },
+ {
+  "title": "AI Writing Tools for Fitness Coaches (2026): Check-Ins, Lead Magnets & Client Content",
+  "url": "/ai-writing-tools-for-fitness-coaches",
+  "desc": "Coaches write the same check-ins, macros and promos over and over. We tested AI writing on the real workload — and on the safety lines that must not be crossed.",
+  "cat": "Audience Guide"
+ },
+ {
+  "title": "AI Writing Tools for Insurance Agents (2026): Quotes Pages, Policy Explanations & Follow-Up",
+  "url": "/ai-writing-tools-for-insurance-agents",
+  "desc": "Insurance copy is compliance-bound. We tested AI writing on lead pages, policy explainers and quote follow-up — and on the wording you must never let a model invent.",
+  "cat": "Audience Guide"
+ },
+ {
+  "title": "AI Writing Tools for Musicians (2026): Bio, Release Copy & Pitching Labels",
+  "url": "/ai-writing-tools-for-musicians",
+  "desc": "Musicians write bios, press kits and release copy under deadline. We tested AI on all three — and on the part where a model cannot hear your record.",
+  "cat": "Audience Guide"
+ },
+ {
+  "title": "AI Writing Tools for Photographers (2026): Packages, Contracts & Client Emails",
+  "url": "/ai-writing-tools-for-photographers",
+  "desc": "Photographers lose hours to the same emails. We tested AI writing on the real workload — gallery delivery notes, pricing pages, contracts and awkward rejections.",
+  "cat": "Audience Guide"
+ },
+ {
+  "title": "AI Writing Tools for Physical Therapists (2026): Home Exercises, Intake Forms & Practice Content",
+  "url": "/ai-writing-tools-for-physical-therapists",
+  "desc": "PT practices run on repetition plus caution. We tested AI writing on home-exercise sheets, intake follow-ups, insurance paperwork and the SEO that fills the appointment book.",
+  "cat": "Audience Guide"
+ },
+ {
+  "title": "AI Writing Tools for Veterinarians (2026): Client Emails, Practice Pages & Discharge Notes",
+  "url": "/ai-writing-tools-for-veterinarians",
+  "desc": "Vet practice writing is clinical-adjacent. We tested AI on discharge summaries, vaccination reminders, practice pages and the sensitive emails that need a human signature.",
+  "cat": "Audience Guide"
+ },
+ {
+  "title": "AI Writing Tools for Wedding Vows and Speeches (2026): What to Use It For",
+  "url": "/ai-writing-tools-for-wedding-vows-and-speeches",
+  "desc": "AI can outline a best-man speech and keep the tone right. It cannot know your story. We tested it on vows, toasts and the reading nobody can leave out.",
+  "cat": "Audience Guide"
  }
 ]
