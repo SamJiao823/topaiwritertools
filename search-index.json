@@ -1456,5 +1456,65 @@
   "url": "/ai-writing-tools-for-tattoo-artists",
   "desc": "AI writing tested against tattoo studio work — portfolio pages, aftercare instructions, consultation forms, healing timelines and review replies.",
   "cat": "Audience Guide"
+ },
+ {
+  "title": "AI Writing Tools for Architects (2026): Project Descriptions, RFP Answers and Client Notes",
+  "url": "/ai-writing-tools-for-architects",
+  "desc": "AI writers tested against architecture-firm writing — competition entries, RFP responses, material schedules, client meeting notes and post-occupancy letters. What it shortens and what it must not touch.",
+  "cat": "Audience Guide"
+ },
+ {
+  "title": "AI Writing Tools for Catering Businesses (2026): Menu Descriptions, Allergen Notes and Quote Explanations",
+  "url": "/ai-writing-tools-for-catering-businesses",
+  "desc": "AI writing tested against catering writing — menu copy, allergen statements, quote breakdowns, tasting invitations and day-of run sheets. Where it saves hours and where the food-safety risk sits.",
+  "cat": "Audience Guide"
+ },
+ {
+  "title": "AI Writing Tools for Drone Operators (2026): Service Pages, Insurance Explanations and Compliance Statements",
+  "url": "/ai-writing-tools-for-drone-operators",
+  "desc": "AI writing tested against drone-service writing — flight service pages, insurance and compliance summaries, quote notes, licensing packages and client safety briefs. What shortens and what a regulator reads.",
+  "cat": "Audience Guide"
+ },
+ {
+  "title": "AI Writing Tools for Financial Advisors (2026): Service Pages, Meeting Follow-Ups and Compliance-Read Copy",
+  "url": "/ai-writing-tools-for-financial-advisors",
+  "desc": "AI writing tested against financial-advisor writing — service descriptions, review follow-ups, newsletter pieces and seminar invites. Where it removes the blank page, and why every line still needs the compliance review.",
+  "cat": "Audience Guide"
+ },
+ {
+  "title": "AI Writing Tools for Graphic Designers (2026): Case Study Copy, Brand Questionnaires and Proposal Text",
+  "url": "/ai-writing-tools-for-graphic-designers",
+  "desc": "AI writing tested against design-studio writing — case studies, brand questionnaires, scope documents, pricing explanations and portfolio blurbs. Where it removes the blank page and where it produces filler.",
+  "cat": "Audience Guide"
+ },
+ {
+  "title": "AI Writing Tools for Hair Stylists and Salons (2026): Service Menus, Colour Consent Forms and Social Posts",
+  "url": "/ai-writing-tools-for-hair-stylists",
+  "desc": "AI writing tested against salon writing — service menu descriptions, aftercare instructions, colour consultation notes, booking reminders and social content. What saves a Saturday and what creates a complaint.",
+  "cat": "Audience Guide"
+ },
+ {
+  "title": "AI Writing Tools for Mobile App Developers (2026): Store Listings, Release Notes and Help Centre Copy",
+  "url": "/ai-writing-tools-for-mobile-app-developers",
+  "desc": "AI writing tested against app-developer writing — App Store listings, release notes, privacy policy drafts, in-app help and landing pages. Where it shortens the release and where it creates a compliance problem.",
+  "cat": "Audience Guide"
+ },
+ {
+  "title": "AI Writing Tools for Piano and Music Teachers (2026): Course Descriptions, Practice Plans and Enrolment Pages",
+  "url": "/ai-writing-tools-for-piano-teachers",
+  "desc": "AI writing tested against music-teaching writing — lesson descriptions, practice schedules, enrolment pages, parent updates and recital notes. Where it saves Sunday evenings and what it must not claim.",
+  "cat": "Audience Guide"
+ },
+ {
+  "title": "AI Writing Tools for Videographers (2026): Shot Lists, Packages and Client Handoff Notes",
+  "url": "/ai-writing-tools-for-videographers",
+  "desc": "AI writing tested against the videography workload — package descriptions, shot lists, run-of-show, booking confirmations and post-production updates. What it saves and what it can promise the wrong thing.",
+  "cat": "Audience Guide"
+ },
+ {
+  "title": "AI Writing Tools for Web Designers (2026): Proposals, Site Copy and Case Study Numbers",
+  "url": "/ai-writing-tools-for-web-designers",
+  "desc": "AI writing tested against web-design writing — project proposals, home-page copy, case studies, maintenance reports and client handoff docs. What it accelerates and where it invents the results.",
+  "cat": "Audience Guide"
  }
 ]
