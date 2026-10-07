@@ -1516,5 +1516,65 @@
   "url": "/ai-writing-tools-for-web-designers",
   "desc": "AI writing tested against web-design writing — project proposals, home-page copy, case studies, maintenance reports and client handoff docs. What it accelerates and where it invents the results.",
   "cat": "Audience Guide"
+ },
+ {
+  "title": "AI Writing Glossary (2026): 40 Terms, Explained Without the Marketing",
+  "url": "/ai-writing-glossary-2026",
+  "desc": "A plain-language glossary of AI writing terms — token, context window, temperature, RAG, hallucination, grounding and more — with what each one actually changes about the text you get.",
+  "cat": "Article"
+ },
+ {
+  "title": "AI Writing Tools: Annual vs Monthly Plans (2026) — When the Discount Is Not Worth It",
+  "url": "/ai-writing-tools-annual-vs-monthly-plans",
+  "desc": "A practical look at annual versus monthly billing for AI writing tools — typical discount sizes, the break-even month, refund windows, and the four situations where paying yearly costs you more.",
+  "cat": "Comparison"
+ },
+ {
+  "title": "AI Writing Tools for Accountants (2026): Client Letters, Service Pages and Engagement Notes",
+  "url": "/ai-writing-tools-for-accountants",
+  "desc": "AI writing tested against accountancy work — client letters, service descriptions, engagement scopes, deadline reminders and proposal text. What it shortens and why every figure stays yours.",
+  "cat": "Audience Guide"
+ },
+ {
+  "title": "AI Writing Tools for Chiropractors (2026): Service Pages, Intake Notes and Patient Reminders",
+  "url": "/ai-writing-tools-for-chiropractors",
+  "desc": "AI writing tested against chiropractic clinic writing — service descriptions, intake paperwork, appointment reminders, aftercare handouts and review requests. Where it saves time and why clinical claims stay out.",
+  "cat": "Audience Guide"
+ },
+ {
+  "title": "AI Writing Tools for Florists (2026): Product Descriptions, Wedding Proposals and Care Cards",
+  "url": "/ai-writing-tools-for-florists",
+  "desc": "AI writing tested against florist writing — product and bouquet descriptions, wedding proposals, care cards, delivery messages and the note after something went wrong. What it saves and what it gets wrong about flowers.",
+  "cat": "Audience Guide"
+ },
+ {
+  "title": "AI Writing Tools for Moving Companies (2026): Quote Requests, Inventory Lists and Damage Notes",
+  "url": "/ai-writing-tools-for-moving-companies",
+  "desc": "AI writing tested against moving-company writing — quote responses, inventory checklists, insurance explanations, scheduling confirmations and damage claim replies. Where it helps and where it creates a liability.",
+  "cat": "Audience Guide"
+ },
+ {
+  "title": "AI Writing Tools for Plumbers (2026): Service Pages, Quote Notes and Emergency Messages",
+  "url": "/ai-writing-tools-for-plumbers",
+  "desc": "AI writing tested against plumbing business writing — service descriptions, quote explanations, emergency response messages, maintenance reminders and review requests. What it saves and what it must not promise.",
+  "cat": "Audience Guide"
+ },
+ {
+  "title": "Cold Email Templates (2026): 6 Structures That Get Replies, With the Lines to Change",
+  "url": "/cold-email-templates-2026",
+  "desc": "Six cold email structures for outreach, service offers and follow-ups — with the specific lines you must rewrite, the ones that get flagged, and why generated openers fail.",
+  "cat": "Article"
+ },
+ {
+  "title": "How to Fact-Check AI Writing (2026): The 12 Checks We Run Before a Draft Ships",
+  "url": "/how-to-fact-check-ai-writing",
+  "desc": "A practical fact-checking routine for AI drafts — the 12 checks, the order to run them in, and the sentence patterns that most often carry invented numbers, dates and quotes.",
+  "cat": "Guide"
+ },
+ {
+  "title": "Social Media Caption Templates (2026): 7 Structures for Posts That Get Saved, Not Scrolled",
+  "url": "/social-media-caption-templates-2026",
+  "desc": "Seven caption structures for product posts, tips, behind-the-scenes and announcements — with the hook line, the line to cut, and why generic captions get no saves.",
+  "cat": "Article"
  }
 ]
