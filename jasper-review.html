@@ -65,24 +65,41 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
 
     <!-- Schema: Product + AggregateRating (star snippet) -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Jasper",
+  "description": "Jasper is a browser-based AI writing platform aimed at marketing teams, with Brand IQ brand-voice controls, campaign templates and shared workspaces.",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web",
+  "url": "https://jasper.ai?fpr=topaiwritertools",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "3.8",
+    "reviewCount": "1",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "offers": [
     {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "name": "Jasper",
-      "applicationCategory": "AI Writing Tool",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "3.8",
-        "reviewCount": "1",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
-      "offers": [
-        { "@type": "Offer", "name": "Creator", "price": "49", "priceCurrency": "USD", "url": "https://jasper.ai?fpr=topaiwritertools" },
-        { "@type": "Offer", "name": "Pro", "price": "69", "priceCurrency": "USD", "url": "https://jasper.ai?fpr=topaiwritertools" }
-      ]
+      "@type": "Offer",
+      "name": "Creator",
+      "price": "49",
+      "priceCurrency": "USD",
+      "url": "https://jasper.ai?fpr=topaiwritertools",
+      "availability": "https://schema.org/InStock"
+    },
+    {
+      "@type": "Offer",
+      "name": "Pro",
+      "price": "69",
+      "priceCurrency": "USD",
+      "url": "https://jasper.ai?fpr=topaiwritertools",
+      "availability": "https://schema.org/InStock"
     }
-    </script>
+  ]
+}
+</script>
 
     <!-- Schema: FAQPage -->
     <script type="application/ld+json">
